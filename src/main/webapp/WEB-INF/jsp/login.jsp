@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>DS共享美业</title>
+    <link rel="stylesheet" type="text/css" href="/static/daui/css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="/static/daui/css/dwui.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="/static/daui/icon/iconfont.css?20180831">
+    <link rel="stylesheet" type="text/css" href="/static/daui/zicon/iconfont.css?20180831">
+    <script src="/static/js/jquery.min.js?20180831"></script>
+
+</head>
+<body class="dwui_login">
+<div class="wrap">
+    <div class="top">
+        <div class="img">
+            <img src="/static/self/login.png?20180831" />
+        </div>
+        <div class="txt">
+            <span>DS共享美业会员服务中心</span>
+        </div>
+    </div>
+
+    <div class="form">
+        <form id="mForm">
+            <div class="line">
+                <p class="zicon zicon-user"></p>
+                <input type="text" name="username" />
+            </div>
+            <div class="line">
+                <p class="zicon zicon-lock"></p>
+                <input type="text" onFocus="this.type='password'" name="userpswd" />
+            </div>
+            <div class="submit">
+                <a href="javascript:Login()">登 录</a>
+            </div>
+            <p style="text-align: center; padding: 5px 0;">
+                <a href="https://www.gxmyvips.com/login/pswd">忘记密码</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div class="daui_loading">
+    <div class="wrap">
+        <span class="daicon daicon-loading"></span>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        $('.daui_loading').hide();
+    });
+    function Login()
+    {
+        $('.daui_loading').show();
+        $.ajax({
+            url:'',
+            type:'POST',
+            dataType:"json",
+            data:$('#mForm').serialize(),
+            success: function(data){
+                $('.daui_loading').hide();
+                if(data.code == 1)
+                {
+                    window.location.href="https://www.gxmyvips.com/main"
+                }
+                else
+                {
+                    alert(data.msg);
+                }
+            },
+            error:function(){
+                $('.daui_loading').hide();
+                alert('网络连接失败');
+            }
+        });
+    }
+</script>
+</html>

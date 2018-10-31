@@ -1,5 +1,3 @@
-import com.yang.dao.CartMapper;
-import com.yang.domain.Cart;
 import com.yang.service.CartService;
 import org.junit.Test;
 import org.junit.runner.RunWith;

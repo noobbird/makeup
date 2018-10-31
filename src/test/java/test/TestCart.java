@@ -1,7 +1,5 @@
 package test;
 
-import com.yang.dao.CartMapper;
-import com.yang.domain.Cart;
 import junit.framework.Assert;
 import org.apache.ibatis.session.SqlSession;
 
