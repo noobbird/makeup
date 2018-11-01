@@ -1,3 +1,8 @@
+import com.yang.dao.CartMapper;
+import com.yang.dao.VipMapper;
+import com.yang.domain.Cart;
+import com.yang.domain.Vip;
+import com.yang.domain.VipExample;
 import com.yang.service.CartService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,11 +19,23 @@ public class implTest {
     CartMapper cartMapper;
     @Autowired
     CartService cartService;
+    @Autowired
+    VipMapper vipMapper;
 
     @Test
     public void find(){
         List<Cart> carts=cartService.getCart();
         System.out.println(carts.size());
+    }
+    @Test
+    public void vipMapper(){
+        VipExample example = new VipExample();
+        example.createCriteria().andVidEqualTo("MY103821").
+                andVPasswordEqualTo("jiojio");
+        List<Vip> examples = vipMapper.selectByExample(example);
+//        Vip vip = vipMapper.selectByPrimaryKey(1);
+        System.out.println(examples);
+
     }
 
 }

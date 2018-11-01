@@ -1,5 +1,6 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -7,18 +8,18 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=edge">
     <meta name="renderer" content="webkit">
     <title>DS共享美业</title>
-    <link rel="stylesheet" type="text/css" href="/static/daui/css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="/static/daui/css/dwui.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="/static/daui/icon/iconfont.css?20180831">
-    <link rel="stylesheet" type="text/css" href="/static/daui/zicon/iconfont.css?20180831">
-    <script src="/static/js/jquery.min.js?20180831"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dwui.css" />
+    <link rel="stylesheet" type="text/css" href="/icon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/zicon/iconfont.css">
+    <script src="/js/jquery.min.js"></script>
 
 </head>
 <body class="dwui_login">
 <div class="wrap">
     <div class="top">
         <div class="img">
-            <img src="/static/self/login.png?20180831" />
+            <img src="/tupian/login.jpg" />
         </div>
         <div class="txt">
             <span>DS共享美业会员服务中心</span>
@@ -26,17 +27,18 @@
     </div>
 
     <div class="form">
-        <form id="mForm">
+        <form id="mForm" action="/login" method="post">
             <div class="line">
                 <p class="zicon zicon-user"></p>
-                <input type="text" name="username" />
+                <input type="text" name="username" placeholder="MY103821" />
             </div>
             <div class="line">
                 <p class="zicon zicon-lock"></p>
-                <input type="text" onFocus="this.type='password'" name="userpswd" />
+                <input type="text" onFocus="this.type='password'" name="userpswd" placeholder="jiojio"/>
             </div>
-            <div class="submit">
-                <a href="javascript:Login()">登 录</a>
+            <%--<div class="submit">--%>
+                <%--<a href="javascript:Login()">登 录</a>--%>
+            <input type="submit" >
             </div>
             <p style="text-align: center; padding: 5px 0;">
                 <a href="https://www.gxmyvips.com/login/pswd">忘记密码</a>
@@ -57,22 +59,22 @@
     });
     function Login()
     {
-        $('.daui_loading').show();
+        // $('.daui_loading').show();
         $.ajax({
-            url:'',
+            url:'/login',
             type:'POST',
             dataType:"json",
-            data:$('#mForm').serialize(),
+            data:$("#mForm").serialize(),
             success: function(data){
-                $('.daui_loading').hide();
-                if(data.code == 1)
-                {
-                    window.location.href="https://www.gxmyvips.com/main"
-                }
-                else
-                {
-                    alert(data.msg);
-                }
+                // $('.daui_loading').hide();
+                // if(data.code == 1)
+                // {
+                //     window.location.href="main.jsp"
+                // }
+                // else
+                // {
+                //     alert(data.msg);
+                // }
             },
             error:function(){
                 $('.daui_loading').hide();

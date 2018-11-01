@@ -67,7 +67,7 @@
 
 
 
-    <table tableName="CART"/>
+    <table tableName="%"/>
 
         <!--<table  tableName="VIP"  domainObjectName="Vip"-->
 
