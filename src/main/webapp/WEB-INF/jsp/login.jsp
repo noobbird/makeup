@@ -36,9 +36,9 @@
                 <p class="zicon zicon-lock"></p>
                 <input type="text" onFocus="this.type='password'" name="userpswd" placeholder="jiojio"/>
             </div>
-            <%--<div class="submit">--%>
-                <%--<a href="javascript:Login()">登 录</a>--%>
-            <input type="submit" >
+            <div class="submit">
+                <a href="javascript:Login()">登 录</a>
+            <%--<input type="submit" >--%>
             </div>
             <p style="text-align: center; padding: 5px 0;">
                 <a href="https://www.gxmyvips.com/login/pswd">忘记密码</a>
@@ -67,14 +67,14 @@
             data:$("#mForm").serialize(),
             success: function(data){
                 // $('.daui_loading').hide();
-                // if(data.code == 1)
-                // {
-                //     window.location.href="main.jsp"
-                // }
-                // else
-                // {
-                //     alert(data.msg);
-                // }
+                if(data.code == 0)
+                {
+                    window.location.href="/main";
+                }
+                else
+                {
+                    alert("账号或密码错误");
+                }
             },
             error:function(){
                 $('.daui_loading').hide();

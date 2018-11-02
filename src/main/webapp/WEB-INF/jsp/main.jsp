@@ -30,7 +30,7 @@
                 <span>首页</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="https://www.gxmyvips.com/info" class="">
+            <a id="profile" class="" onclick="jump();">
                 <em class="zicon zicon-user"></em>
                 <span>个人信息</span>
                 <em class="zicon zicon-arrowright"></em>
@@ -150,6 +150,12 @@
     </div>
     <div class="flex"></div>
 </div>
+<script language="javascript" type="text/javascript">
+
+    function jump(){
+        $("#dwui_main").load("/main",function(){ $("#dwui_main").fadeIn(100);})};
+
+</script>
 
 </body>
 </html>
