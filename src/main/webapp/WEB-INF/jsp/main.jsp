@@ -153,7 +153,7 @@
 <script language="javascript" type="text/javascript">
 
     function jump(){
-        $("#dwui_main").load("/main",function(){ $("#dwui_main").fadeIn(100);})};
+        $(".dwui_main").load("/profile",function(){ $(".dwui_main").fadeIn(100);})};
 
 </script>
 
