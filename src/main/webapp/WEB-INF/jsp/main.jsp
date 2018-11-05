@@ -30,37 +30,37 @@
                 <span>首页</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="profile" class="" onclick="jump();">
+            <a id="profile" href="#" class="" onclick="jump('profile');">
                 <em class="zicon zicon-user"></em>
                 <span>个人信息</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="/team" class="">
+            <a id="team" href="#" class="" onclick="jump('team');">
                 <em class="zicon zicon-users"></em>
                 <span>团队信息</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="/cart" class="">
+            <a id="cart" href="#" class="" onclick="jump('cart');">
                 <em class="zicon zicon-cart"></em>
                 <span>在线购物</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="/wallet/his" class="">
+            <a id="wallethis" href="#" class="" onclick="jump('wallethis');">
                 <em class="zicon zicon-bonus"></em>
                 <span>奖金纪录</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="/wallet" class="">
+            <a id="wallet" href="#" class="" onclick="jump('wallet');">
                 <em class="zicon zicon-wallet"></em>
                 <span>资金账户</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="/jifen" class="">
+            <a id="jifen" href="#" class="" onclick="jump('jifen');">
                 <em class="zicon zicon-wallet"></em>
                 <span>积分账户</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="/info/pswd" class="">
+            <a id="pswd" href="#" class="" onclick="jump('pswd');">
                 <em class="zicon zicon-gear"></em>
                 <span>修改密码</span>
                 <em class="zicon zicon-arrowright"></em>
@@ -152,8 +152,9 @@
 </div>
 <script language="javascript" type="text/javascript">
 
-    function jump(){
-        $(".dwui_main").load("/profile",function(){ $(".dwui_main").fadeIn(100);})};
+    function jump(path){
+        // alert(path);
+        $(".dwui_main").load("/" + path,function(){ $(".dwui_main").fadeIn(100);})};
 
 </script>
 
