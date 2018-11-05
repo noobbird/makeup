@@ -14,7 +14,7 @@
     <result column="V_CLASS" property="vClass" jdbcType="VARCHAR" />
     <result column="REGISTE_TIME" property="registeTime" jdbcType="TIMESTAMP" />
     <result column="RECOMMEND_PERSON" property="recommendPerson" jdbcType="VARCHAR" />
-    <result column="RECOMMEND_VID" property="recommendVid" jdbcType="INTEGER" />
+    <result column="RECOMMEND_VID" property="recommendVid" jdbcType="VARCHAR" />
     <result column="BANK_NAME" property="bankName" jdbcType="VARCHAR" />
     <result column="BANK_NUMBER" property="bankNumber" jdbcType="VARCHAR" />
     <result column="ADDRESS" property="address" jdbcType="VARCHAR" />

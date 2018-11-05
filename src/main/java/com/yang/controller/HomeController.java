@@ -28,7 +28,7 @@ public class HomeController {
     @RequestMapping(value = "/profile")
     public String profile(HttpServletRequest request){
         HttpSession session = request.getSession();
-        String vid = (String)session.getAttribute("username");
+        String vid = (String)session.getAttribute("userName");
         Vip vip = profileService.getProfile(vid);
         request.setAttribute("vip", vip);
         return "profile";

@@ -25,7 +25,7 @@
 
         </div>
         <div class="navs">
-            <a href="https://www.gxmyvips.com/main" class="active">
+            <a href="/main" class="active">
                 <em class="zicon zicon-home"></em>
                 <span>首页</span>
                 <em class="zicon zicon-arrowright"></em>
@@ -35,32 +35,32 @@
                 <span>个人信息</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="https://www.gxmyvips.com/team" class="">
+            <a href="/team" class="">
                 <em class="zicon zicon-users"></em>
                 <span>团队信息</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="https://www.gxmyvips.com/cart" class="">
+            <a href="/cart" class="">
                 <em class="zicon zicon-cart"></em>
                 <span>在线购物</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="https://www.gxmyvips.com/wallet/his" class="">
+            <a href="/wallet/his" class="">
                 <em class="zicon zicon-bonus"></em>
                 <span>奖金纪录</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="https://www.gxmyvips.com/wallet" class="">
+            <a href="/wallet" class="">
                 <em class="zicon zicon-wallet"></em>
                 <span>资金账户</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="https://www.gxmyvips.com/jifen" class="">
+            <a href="/jifen" class="">
                 <em class="zicon zicon-wallet"></em>
                 <span>积分账户</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a href="https://www.gxmyvips.com/info/pswd" class="">
+            <a href="/info/pswd" class="">
                 <em class="zicon zicon-gear"></em>
                 <span>修改密码</span>
                 <em class="zicon zicon-arrowright"></em>

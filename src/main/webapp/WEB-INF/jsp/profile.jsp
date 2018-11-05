@@ -11,6 +11,61 @@
     <title>Title</title>
 </head>
 <body>
-${vip}
+<div class="daui_col">
+    <div class="top">
+        <div class="title">
+            <span class="daui_icon1"></span>
+            <span>我的信息</span>
+        </div>
+        <div class="parme">
+            <span></span>
+        </div>
+        <div class="btns">
+            <div>
+                <a href="https://www.gxmyvips.com/info/edit" class="daui_btn medium blue">修改</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrap">
+
+        <table class="daui_table">
+            <tbody><tr>
+                <th width="120">ID</th>
+                <td>${vip.vid}</td>
+            </tr>
+            <tr>
+                <th>姓名</th>
+                <td>${vip.vName}</td>
+            </tr>
+            <tr>
+                <th>手机号</th>
+                <td>${vip.phone}</td>
+            </tr>
+            <tr>
+                <th>级别</th>
+                <td>${vip.vClass}</td>
+            </tr>
+            <tr>
+                <th>入驻时间</th>
+                <td>${vip.registeTime}</td>
+            </tr>
+            <tr>
+                <th>推荐人</th>
+                <td>${vip.recommendPerson} ${vip.recommendVid}</td>
+            </tr>
+            <tr>
+                <th>收款银行</th>
+                <td>${vip.bankName}</td>
+            </tr>
+            <tr>
+                <th>收款卡号</th>
+                <td>${vip.bankNumber}</td>
+            </tr>
+            </tbody></table>
+    </div>
+</div>
 </body>
 </html>
