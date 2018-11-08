@@ -12,14 +12,6 @@ $(function(){
 
     $(".daui_loading").hide();
 
-    $('.datetimepicker.date').datetimepicker({
-        timepicker:false,
-        format:'Y-m-d',
-    });
-    $('.datetimepicker.datetime').datetimepicker({
-        timepicker:true,
-        format:'Y-m-d H:i',
-    });
 });
 
 

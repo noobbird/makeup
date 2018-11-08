@@ -26,7 +26,9 @@ public class implTest {
 
     @Test
     public void find(){
-        List<Cart> carts=cartService.getCart();
+        Cart cart = new Cart();
+        cart.setProductId(102);
+        List<Cart> carts=cartService.findCartByWhere(cart);
         System.out.println(carts.size());
     }
     @Test

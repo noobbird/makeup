@@ -17,10 +17,42 @@ public class CartServiceImpl implements CartService {
     public List<Cart> getCart() {
         System.out.println("here");
         return cartMapper.selectByExample(new CartExample());
+
+    }
+
+
+    @Override
+    public Cart getCartById(int oId) {
+        return cartMapper.selectByPrimaryKey(oId);
     }
 
     @Override
-    public Cart getCartById(int id) {
-        return null;
+    public List<Cart> findCartByWhere(Cart cart) {
+        CartExample cartExample = new CartExample();
+        CartExample.Criteria criteria = cartExample.createCriteria();
+        addCriteria(criteria,cart);
+        return cartMapper.selectByExample(cartExample);
+    }
+
+    @Override
+    public int updateCartByKey(Cart cart) {
+        return cartMapper.updateByPrimaryKey(cart);
+    }
+
+    @Override
+    public int insertCart(Cart cart) {
+        return cartMapper.insert(cart);
+    }
+
+    public void addCriteria( CartExample.Criteria criteria,Cart cart){
+        if (cart.getoId()!=null){
+            criteria.andOIdEqualTo(cart.getoId());
+        }
+        if (cart.getProductId()!=null){
+            criteria.andProductIdEqualTo(cart.getProductId());
+        }
+        if (cart.getVipId()!=null){
+            criteria.andVipIdEqualTo(cart.getVipId());
+        }
     }
 }

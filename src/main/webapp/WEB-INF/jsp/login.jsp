@@ -30,11 +30,11 @@
         <form id="mForm" action="/login" method="post">
             <div class="line">
                 <p class="zicon zicon-user"></p>
-                <input type="text" name="username" placeholder="MY103821" />
+                <input type="text" name="username" value="MY103821" />
             </div>
             <div class="line">
                 <p class="zicon zicon-lock"></p>
-                <input type="text" onFocus="this.type='password'" name="userpswd" placeholder="jiojio"/>
+                <input type="text" onFocus="this.type='password'" name="userpswd" value="jiojio"/>
             </div>
             <div class="submit">
                 <a href="javascript:Login()">登 录</a>
@@ -67,7 +67,7 @@
             data:$("#mForm").serialize(),
             success: function(data){
                 // $('.daui_loading').hide();
-                if(data.code == 0)
+                if(data.code =='1')
                 {
                     window.location.href="/main";
                 }

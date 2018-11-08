@@ -18,9 +18,9 @@ public class LoginServiceImpl implements LoginService{
         VipExample vipExample = new VipExample();
         vipExample.createCriteria().andVidEqualTo(username).andVPasswordEqualTo(password);
         List<Vip> vipList = vipMapper.selectByExample(vipExample);
-        if(vipList.size() == 0)
-            return 0;
-        else
+        if(vipList.size()>0)
             return 1;
+        else
+            return 0;
     }
 }
