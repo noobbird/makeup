@@ -22,8 +22,8 @@ public class VipManageServiceImpl implements VipManagerService {
 
     @Override
     public Vip insert(Vip vip) {
-        BigDecimal initialBanlance = new BigDecimal(0.00);
-        BigDecimal initialPoints = new BigDecimal(0.00);
+        float initialBanlance = 0;
+        float initialPoints = 0;
         String prefix = "MY";
         VidGenerator vidGenerator = vidGeneratorMapper.selectByPrimaryKey(0);
         int suffix = vidGenerator.getSuffixNumber();

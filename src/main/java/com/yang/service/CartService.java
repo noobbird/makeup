@@ -8,5 +8,9 @@ import java.util.List;
 @Service
 public interface CartService {
     public List<Cart> getCart();
-    public Cart getCartById(int id );
+     Cart getCartById(int oId );
+    List<Cart> findCartByWhere(Cart cart);
+    int updateCartByKey(Cart cart);
+
+    int insertCart(Cart cart);
 }

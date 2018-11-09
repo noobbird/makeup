@@ -100,6 +100,11 @@
     O_ID, VID, V_NAME, PHONE, V_CLASS, REGISTE_TIME, RECOMMEND_PERSON, RECOMMEND_VID, 
     BANK_NAME, BANK_NUMBER, ADDRESS, BANLANCE, POINTS, V_PASSWORD, PAY_PASSWORD
   </sql>
+<update id="updateVipByVid" parameterType="Vip" >
+  UPDATE VIP SET
+    <if test="banlance!=null">BANLANCE=#{banlance,jdbcType=DECIMAL}</if>
+  WHERE VID=#{vid,jdbcType=VARCHAR}
+</update>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.yang.domain.VipExample" >
     <!--
       WARNING - @mbggenerated

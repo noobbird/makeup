@@ -1,4 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  isELIgnored="false" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!doctype html>
 <html>
 <head>
@@ -7,60 +8,65 @@
 
     <title>DS共享美业</title>
 
+
     <link rel="stylesheet" type="text/css" href="/css/style.css?20180831" />
     <link rel="stylesheet" type="text/css" href="/css/dwui.css?20180831" />
-    <script src="/js/jquery.min.js?20180831"></script>
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
     <script src="/js/script.js?20180831"></script>
-    <script src="/js/datetimepicker/jquery.datetimepicker.full.js?20180831"></script>
-    <script src="/js/webuploader/webuploader.js?20180831"></script>
-    <script src="/js/webuploader/dauiuploader.js?20180831"></script>
 </head>
 <body>
 <div class="dwui_body">
     <div class="dwui_navs">
         <div class="logo">
-            <img src="/static/self/logo.png?20180831" />
+
+
+            <img src="/images/cart.jpg" />
         </div>
         <div class="dwui_menu zicon zicon-menu" onClick="$('.dwui_navs').hide();$('.dwui_menu.menu2').show();">
 
         </div>
         <div class="navs">
-            <a href="/main" class="active">
+            <a href="/main" class="" name="welcome" onclick="jump(this,'welcome')" id="welcome">
                 <em class="zicon zicon-home"></em>
                 <span>首页</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="profile" href="#" class="" onclick="jump('profile');">
+            <a id="profile" href="#" class="" onclick="jump(this,'profile');" id="profile">
                 <em class="zicon zicon-user"></em>
                 <span>个人信息</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="team" href="#" class="" onclick="jump('team');">
+            <a id="team" href="#" class="" onclick="jump(this,'team');" id="team">
                 <em class="zicon zicon-users"></em>
                 <span>团队信息</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="cart" href="#" class="" onclick="jump('cart');">
+            <a id="product" href="#" class="" onclick="jump(this,'product');" id="product">
                 <em class="zicon zicon-cart"></em>
                 <span>在线购物</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="wallethis" href="#" class="" onclick="jump('wallethis');">
+            <a id="cart" href="#" class="" onclick="jump(this,'cart');" id="cart">
+                <em class="zicon zicon-cart"></em>
+                <span>购物车</span>
+                <em class="zicon zicon-arrowright"></em>
+            </a>
+            <a id="wallethis" href="#" class="" onclick="jump(this,'wallethis');" id="wallethis">
                 <em class="zicon zicon-bonus"></em>
                 <span>奖金纪录</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="wallet" href="#" class="" onclick="jump('wallet');">
+            <a id="wallet" href="#" class="" onclick="jump(this,'wallet');" id="wallet">
                 <em class="zicon zicon-wallet"></em>
                 <span>资金账户</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="jifen" href="#" class="" onclick="jump('jifen');">
+            <a id="jifen" href="#" class="" onclick="jump(this,'jifen');" id="jifen">
                 <em class="zicon zicon-wallet"></em>
                 <span>积分账户</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="pswd" href="#" class="" onclick="jump('pswd');">
+            <a id="pswd" href="#" class="" onclick="jump(this,'pswd');" id="pawd">
                 <em class="zicon zicon-gear"></em>
                 <span>修改密码</span>
                 <em class="zicon zicon-arrowright"></em>
@@ -80,54 +86,7 @@
             </div>
         </div>
 
-        <div class="dwui_main">
-
-            <div class="daui_col">
-                <div class="top">
-                    <div class="title">
-                        <span class="daui_icon1"></span>
-                        <span>欢迎您，${userName}</span>
-                    </div>
-                    <div class="parme">
-                        <span>MY103821</span>
-                    </div>
-                    <div class="btns">
-                        <div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="wrap">
-
-                    <div class="dwui_grid">
-                        <div class="daui_flex">
-                            <div class="flex">
-                                <a href="https://www.gxmyvips.com/wallet">
-                                    <i class="zicon zicon-wallet"></i>
-                                    <span>我的钱包</span>
-                                </a>
-                            </div>
-                            <div class="flex">
-                                <a href="https://www.gxmyvips.com/team">
-                                    <i class="zicon zicon-users"></i>
-                                    <span>我的团队</span>
-                                </a>
-                            </div>
-                            <div class="flex">
-                                <a href="https://www.gxmyvips.com/cart">
-                                    <i class="zicon zicon-cart"></i>
-                                    <span>在线购物</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
+        <div class="dwui_main"> </div>
     </div>
 </div>
 
@@ -151,10 +110,17 @@
     <div class="flex"></div>
 </div>
 <script language="javascript" type="text/javascript">
+    //记录当前点击的连接
+    var linkName='welcome';
+    $(() =>{
+        $('#welcome').click()
+    });
 
-    function jump(path){
-        // alert(path);
-        $(".dwui_main").load("/" + path,function(){ $(".dwui_main").fadeIn(100);})};
+    function jump(x,path){
+        $('#'+linkName).css("background","");
+        $('#'+path).css("background","#0d97ff");
+        linkName=path;
+        $(".dwui_main").load("home/"+path,function(){ $(".dwui_main").fadeIn(100);})};
 
 </script>
 

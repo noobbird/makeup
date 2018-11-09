@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
+@RequestMapping("/home")
 public class HomeController {
     @Autowired
     CartService cartService;
@@ -23,6 +24,12 @@ public class HomeController {
     public String printHello(Model model) {
         System.out.println(cartService.getCart());
         return "index";
+    }
+
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    public String welcome(Model model) {
+        System.out.println(cartService.getCart());
+        return "welcome";
     }
 
     @RequestMapping(value = "/profile")
@@ -52,6 +59,17 @@ public class HomeController {
 //        Vip vip = profileService.getProfile(vid);
 //        request.setAttribute("vip", vip);
         return "cart";
+
+    }
+
+    /**
+     * 跳转到product.jsp
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/product")
+    public String product(HttpServletRequest request){
+        return "product";
 
     }
 

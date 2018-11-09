@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.enterprise.inject.Model;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
@@ -25,7 +26,7 @@ public class LoginController {
         System.out.println("username: " + username);
         System.out.println("userpswd: " + userpswd);
         int res = loginService.login(username, userpswd);
-        if(res == 0){
+        if(res==1){
             HttpSession session = req.getSession();
             session.setAttribute("userName", username);
             req.setAttribute("userName",username);
@@ -38,9 +39,10 @@ public class LoginController {
 
 
     @RequestMapping(value = "/main", method= RequestMethod.GET)
-    public String main(HttpServletRequest req){
+    public String main(HttpServletRequest req ){
         HttpSession session = req.getSession();
         String name = (String)session.getAttribute("userName");
+        req.setAttribute("userName",name);
         System.out.println("name in session: " + name);
         if(null == name){
             return "redirect:/";
