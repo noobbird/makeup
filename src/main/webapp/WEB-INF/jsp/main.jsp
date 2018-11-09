@@ -18,6 +18,8 @@
 <div class="dwui_body">
     <div class="dwui_navs">
         <div class="logo">
+
+
             <img src="/images/cart.jpg" />
         </div>
         <div class="dwui_menu zicon zicon-menu" onClick="$('.dwui_navs').hide();$('.dwui_menu.menu2').show();">
