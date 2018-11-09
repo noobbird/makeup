@@ -35,6 +35,8 @@ public class LoginController {
             return new MyStatus(res);
         }
     }
+
+
     @RequestMapping(value = "/main", method= RequestMethod.GET)
     public String main(HttpServletRequest req){
         HttpSession session = req.getSession();
@@ -47,6 +49,27 @@ public class LoginController {
             return "main";
         }
 
+    }
+    @ResponseBody
+    @RequestMapping(value = "/sulogin", method= RequestMethod.POST)
+    public MyStatus sulogin(HttpServletRequest req,String username, String userpswd ){
+
+        int res = loginService.sulogin(username, userpswd);
+        if(res == 0){
+            HttpSession session = req.getSession();
+            session.setAttribute("suName", username);
+            session.setAttribute("isSu", true);
+            req.setAttribute("suName",userpswd);
+
+            return new MyStatus(res);
+        }
+        else{
+            return new MyStatus(res);
+        }
+    }
+    @RequestMapping(value = "/admin", method= RequestMethod.GET)
+    public String admin(HttpServletRequest req){
+        return "sulogin";
     }
 
 
