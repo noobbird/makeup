@@ -109,7 +109,7 @@
                         <td>
                             <a href="javascript:Daui_iframe('https://www.gxmyvips.com/cart/view/32');" style="vertical-align: top">
                                 <img src="../images/1.jpg" >
-                                &nbsp;牵雅（花蜜柔肤水)</a>
+                                &nbsp;${ productVO.productName}</a>
                         </td>
                         <td class="c">${ productVO.cashPrice}</td>
                         <td class="c">${ productVO.saleCount}</td>

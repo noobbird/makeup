@@ -1,6 +1,7 @@
 package com.yang.controller;
 
 import com.yang.dao.ProductMapper;
+import com.yang.dao.VipMapper;
 import com.yang.domain.Cart;
 import com.yang.domain.Product;
 import com.yang.domain.ShoppingRecord;
@@ -8,6 +9,8 @@ import com.yang.domain.Vip;
 import com.yang.service.CartService;
 import com.yang.service.ProductService;
 import com.yang.service.ShoppingRecordService;
+import com.yang.service.VipService;
+import com.yang.util.Constant;
 import com.yang.vo.ProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -29,6 +33,9 @@ public class CartController {
     @Autowired
     private ShoppingRecordService shoppingRecordService;
 
+    @Autowired
+    private VipService vipService;
+
     @ResponseBody
     @RequestMapping(value = "/findCartByWhere")
     public List<Cart> findCartByWhere(HttpServletRequest request){
@@ -40,12 +47,15 @@ public class CartController {
 
     @ResponseBody
     @RequestMapping(value = "/purchase")
-    public String purchase(@RequestParam("oId") String oId){
+    public String purchase(HttpServletRequest request,@RequestParam("oId") String oId){
+        String returnFlag="";
         Float amount =new Float(0.00);
         String[] oids= oId.split(",");
+        List<ShoppingRecord> shoppingRecordList= new ArrayList<>();
         for (String oid:oids) {
             Cart cart =cartService.getCartById(Integer.parseInt(oid));
             Product product = productService.getProductByKey(cart.getProductId());
+            //创建购买记录
             ShoppingRecord shoppingRecord = new ShoppingRecord();
             shoppingRecord.setVipId(cart.getVipId());
             shoppingRecord.setProductId(cart.getProductId());
@@ -53,10 +63,28 @@ public class CartController {
             shoppingRecord.setProductPrice(product.getCashPrice());
             Float total = shoppingRecord.getProductPrice()*shoppingRecord.getProductCount();
             shoppingRecord.setTotalPrice(total);
-            shoppingRecordService.insertShoppingRecord(shoppingRecord);
+            //记录消费金额
             amount=amount+total;
+            shoppingRecordList.add(shoppingRecord);
         }
-        return "";
+        try {
+            Vip vip=vipService.getVipByVid((String) request.getSession()
+            .getAttribute("userName"));
+            if (amount>vip.getBanlance()){
+                returnFlag= Constant.BALANCEF_NOT_ENOUGH;
+            }else {
+                for(ShoppingRecord shoppingRecord:shoppingRecordList){
+                    shoppingRecordService.insertShoppingRecord(shoppingRecord);
+                }
+                vip.setBanlance(vip.getBanlance()-amount);
+                vipService.updateVipByVid(vip);
+                returnFlag=Constant.SUCCESS;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            returnFlag=Constant.FAILURE;
+        }
+        return returnFlag;
 
     }
 

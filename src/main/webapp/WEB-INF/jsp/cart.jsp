@@ -78,7 +78,14 @@
                 let data={};
                 data.oId=cartId;
                 $.post('/cart/purchase',data,(results) =>{
-
+                    // console.log(results)
+                    if (results=='1'){
+                        alert("购买成功")
+                    } else if (results=='0') {
+                        alert("发生异常，购买失败")
+                    }else {
+                        alert('余额不足')
+                    }
                 },'text');
             }
 
