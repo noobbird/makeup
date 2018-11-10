@@ -14,6 +14,7 @@
     <script src="/js/datetimepicker/jquery.datetimepicker.full.js?20180831"></script>
     <script src="/js/webuploader/webuploader.js?20180831"></script>
     <script src="/js/webuploader/dauiuploader.js?20180831"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <div class="dwui_body">

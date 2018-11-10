@@ -1,5 +1,6 @@
 package com.yang.controller;
 
+import com.yang.domain.MyStatus;
 import com.yang.domain.Vip;
 import com.yang.service.VipManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,6 +52,13 @@ public class SuHomeController {
 //        req.setAttribute("vipList", vipList);
         return resVip;
     }
+    @ResponseBody
+    @RequestMapping(value = "/modifyVip")
+    public MyStatus modifyVip(HttpServletRequest req, Vip vip){
+        int res = vipManagerService.update(vip);
+        return new MyStatus(res);
+    }
+
 
 
 

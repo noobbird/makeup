@@ -79,11 +79,10 @@
             <div class="inputs">
                     <span class="daui_select">
                         <select name="bankName">
-                            <option value="中国农业银行">请选择..</option>
                             <option value="中国工商银行">中国工商银行</option>
                             <option value="中国建设银行">中国建设银行</option>
                             <option value="中国银行">中国银行</option>
-                            <option value="中国农业银行">中国农业银行</option>
+                            <option value="中国农业银行" selected>中国农业银行</option>
                         </select>
                     </span>
             </div>
@@ -101,11 +100,11 @@
             <a href="javascript:submitVip();" class="daui_btn big blue">添加会员</a>
         </div>
         <div id="success" class="alert alert-success" style="display: none">
-            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <a href="#" class="close">&times;</a>
             <strong>添加成功！</strong>
         </div>
         <div id="fail" class="alert alert-warning" style="display: none" >
-            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <a href="#" class="close">&times;</a>
             <strong>添加失败！</strong>您的网络连接可能有问题。
         </div>
     </form>
@@ -113,8 +112,8 @@
 <script>
     $(function(){
         $(".close").click(function(){
-            $("#success").alert();
-            $("#fail").alert();
+            $("#success").hide();
+            $("#fail").hide();
         });
     });
     function submitVip(){
@@ -126,6 +125,7 @@
             success: function(vip){
                 // $('.daui_loading').hide();
                 // alert(vip.vid+vip.vPassword+vip.payPassword);
+                $('#success strong').text("登录成功");
                 $('#success strong').append("<br/> 登录名: " +
                     vip.vid+"<br/>登录密码: "+vip.vPassword+ "<br/> 支付密码: "+vip.payPassword);
                 $('#success').show();

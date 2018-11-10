@@ -40,7 +40,26 @@ public class VipManageServiceImpl implements VipManagerService {
 
     @Override
     public int update(Vip vip) {
-        int res = vipMapper.updateByPrimaryKey(vip);
+        //通过Vid找到数据库记录，然后根据前台传的vip对象更改这个记录
+        int res = 0;
+        VipExample vipExample = new VipExample();
+        vipExample.createCriteria().andVidEqualTo(vip.getVid());
+        List<Vip>  vips= vipMapper.selectByExample(vipExample);
+        if(vips.size() != 1){
+            res = -1;
+        }
+        else{
+            Vip vipModel = vips.get(0);
+            vipModel.setvName(vip.getvName());
+            vipModel.setPhone(vip.getPhone());
+            vipModel.setRecommendVid(vip.getRecommendVid());
+            vipModel.setRecommendPerson(vip.getRecommendPerson());
+            vipModel.setvClass(vip.getvClass());
+            vipModel.setBankName(vip.getBankName());
+            vipModel.setBankNumber(vip.getBankNumber());
+            vipModel.setAddress(vip.getAddress());
+            res = vipMapper.updateByPrimaryKey(vipModel);
+        }
         return res;
     }
 
