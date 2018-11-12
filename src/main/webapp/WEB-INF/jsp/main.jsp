@@ -25,8 +25,6 @@
         <div class="dwui_menu zicon zicon-menu" onClick="$('.dwui_navs').hide();$('.dwui_menu.menu2').show();">
 
         </div>
-
-
         <div class="navs">
             <a href="/main" class="" name="welcome" onclick="jump(this,'welcome')" id="welcome">
                 <em class="zicon zicon-home"></em>
