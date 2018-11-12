@@ -96,4 +96,13 @@ public class Admin {
     public void setAdminPassword(String adminPassword) {
         this.adminPassword = adminPassword == null ? null : adminPassword.trim();
     }
+
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "oId=" + oId +
+                ", adminName='" + adminName + '\'' +
+                ", adminPassword='" + adminPassword + '\'' +
+                '}';
+    }
 }

@@ -77,7 +77,7 @@ public class ProductServiceImpl implements ProductService {
             product.setCashPrice(Float.parseFloat(productVO.getCashPrice()));
         }
         if (productVO.getPointPrice()!=null){
-            product.setPointPrice(BigDecimal.valueOf(Double.valueOf(productVO.getPointPrice())));
+            product.setPointPrice(Float.parseFloat(productVO.getPointPrice()));
         }
         if (productVO.getSaleCount()!=null ){
             product.setSaleCount(Integer.parseInt(productVO.getSaleCount()));

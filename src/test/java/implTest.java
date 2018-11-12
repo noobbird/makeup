@@ -1,16 +1,16 @@
-import com.yang.dao.CartMapper;
+import com.yang.dao.AdminMapper;
+import com.yang.dao.VidGeneratorMapper;
 import com.yang.dao.VipMapper;
-import com.yang.domain.Cart;
-import com.yang.domain.Vip;
-import com.yang.domain.VipExample;
+import com.yang.domain.*;
 import com.yang.service.CartService;
+import com.yang.service.LoginService;
 import com.yang.service.ProfileService;
+import com.yang.service.VipManagerService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import sun.java2d.cmm.Profile;
 
 import java.util.List;
 
@@ -23,6 +23,12 @@ public class implTest {
     CartService cartService;
     @Autowired
     VipMapper vipMapper;
+    @Autowired
+    AdminMapper adminMapper;
+    @Autowired
+    LoginService loginService;
+    @Autowired
+    VipManagerService vipManagerService;
 
     @Test
     public void find(){
@@ -46,6 +52,43 @@ public class implTest {
         Vip vip = profileService.getProfile("MY103821");
         System.out.println(vip);
 
+    }
+    //test admin login
+    @Test
+    public void suloginTest(){
+        int res = loginService.sulogin("admin","admin123");
+//        Admin admin = adminMapper.selectByPrimaryKey(1);
+        System.out.println(res);
+    }
+
+    @Test
+    public void insertVip(){
+        Vip vip = new Vip();
+        vip.setAddress("meishan");
+        vip.setBankName("icbc");
+        vip.setBankNumber("2323");
+        vip.setoId(5);
+        vip.setVid("meng");
+        vip.setPayPassword("oijoij");
+        vip.setRecommendVid("MY103821");
+        Vip vip1 = vipManagerService.insert(vip);
+        System.out.println(vip1);
+
+    }
+
+    @Test
+    public void getAllVip(){
+        List<Vip> vips = vipManagerService.getAllVip();
+        System.out.println(vips.size());
+    }
+    @Autowired
+    VidGeneratorMapper vidGeneratorMapper;
+    @Test
+    public void getVid(){
+        VidGenerator vidGenerator = vidGeneratorMapper.selectByPrimaryKey(0);
+        vidGenerator.setSuffixNumber(vidGenerator.getSuffixNumber() + 1);
+        vidGeneratorMapper.updateByPrimaryKey(vidGenerator);
+        System.out.println(vidGenerator);
     }
 
 }

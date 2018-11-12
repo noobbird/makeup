@@ -67,7 +67,7 @@
 
 
 
-    <table tableName="%"/>
+    <table tableName="VID_GENERATOR"/>
 
         <!--<table  tableName="VIP"  domainObjectName="Vip"-->
 
