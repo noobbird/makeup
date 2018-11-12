@@ -10,13 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eb58ce3-1e44-4906-8310-f3d54ec69df8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/vipmanage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipManageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipManageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,31 +71,31 @@
     <session id="-106792935">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="1" value="1" />
           <entry key="css" value="2" />
-          <entry key="java" value="5983" />
+          <entry key="java" value="6021" />
           <entry key="js" value="1090" />
-          <entry key="jsp" value="2643" />
+          <entry key="jsp" value="2748" />
           <entry key="properties" value="1" />
-          <entry key="txt" value="234" />
+          <entry key="txt" value="300" />
           <entry key="xml" value="336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5983" />
-          <entry key="JSP" value="2643" />
+          <entry key="JAVA" value="6021" />
+          <entry key="JSP" value="2748" />
           <entry key="JavaScript" value="1090" />
-          <entry key="PLAIN_TEXT" value="237" />
+          <entry key="PLAIN_TEXT" value="303" />
           <entry key="Properties" value="1" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="335" />
@@ -111,9 +107,9 @@
           <entry key="class" value="9" />
           <entry key="css" value="5" />
           <entry key="html" value="1" />
-          <entry key="java" value="105" />
+          <entry key="java" value="108" />
           <entry key="js" value="6" />
-          <entry key="jsp" value="39" />
+          <entry key="jsp" value="41" />
           <entry key="png" value="2" />
           <entry key="properties" value="3" />
           <entry key="rnc" value="1" />
@@ -126,8 +122,8 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="105" />
-          <entry key="JSP" value="39" />
+          <entry key="JAVA" value="108" />
+          <entry key="JSP" value="41" />
           <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="3" />
@@ -142,29 +138,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="112" selection-start-line="112" selection-end-line="117" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/CartController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipManageServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+            <state relative-caret-position="161">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="78" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -172,34 +159,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/vipmanage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
-              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="-659">
+              <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            <state relative-caret-position="261">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/LoginServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="55" column="39" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="39" />
+            <state relative-caret-position="146">
+              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/productController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="51" selection-start-line="51" selection-end-line="56" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -220,78 +235,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/VipManagerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
+            <state relative-caret-position="207">
               <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/VipService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/Vip.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
-              <folding>
-                <element signature="e#3689#3690#0" expanded="true" />
-                <element signature="e#3715#3716#0" expanded="true" />
-                <element signature="e#3996#3997#0" expanded="true" />
-                <element signature="e#4026#4027#0" expanded="true" />
-                <element signature="e#4295#4296#0" expanded="true" />
-                <element signature="e#4321#4322#0" expanded="true" />
-                <element signature="e#4599#4600#0" expanded="true" />
-                <element signature="e#4657#4658#0" expanded="true" />
-                <element signature="e#4934#4935#0" expanded="true" />
-                <element signature="e#4962#4963#0" expanded="true" />
-                <element signature="e#5252#5253#0" expanded="true" />
-                <element signature="e#5316#5317#0" expanded="true" />
-                <element signature="e#6409#6410#0" expanded="true" />
-                <element signature="e#6437#6438#0" expanded="true" />
-                <element signature="e#6725#6726#0" expanded="true" />
-                <element signature="e#6789#6790#0" expanded="true" />
-                <element signature="e#7069#7070#0" expanded="true" />
-                <element signature="e#7098#7099#0" expanded="true" />
-                <element signature="e#7393#7394#0" expanded="true" />
-                <element signature="e#7460#7461#0" expanded="true" />
-                <element signature="e#7753#7754#0" expanded="true" />
-                <element signature="e#7787#7788#0" expanded="true" />
-                <element signature="e#8105#8106#0" expanded="true" />
-                <element signature="e#8151#8152#0" expanded="true" />
-                <element signature="e#8458#8459#0" expanded="true" />
-                <element signature="e#8496#8497#0" expanded="true" />
-                <element signature="e#9228#9229#0" expanded="true" />
-                <element signature="e#9263#9264#0" expanded="true" />
-                <element signature="e#9588#9589#0" expanded="true" />
-                <element signature="e#9636#9637#0" expanded="true" />
-                <element signature="e#9922#9923#0" expanded="true" />
-                <element signature="e#9953#9954#0" expanded="true" />
-                <element signature="e#10258#10259#0" expanded="true" />
-                <element signature="e#10331#10332#0" expanded="true" />
-                <element signature="e#10623#10624#0" expanded="true" />
-                <element signature="e#10656#10657#0" expanded="true" />
-                <element signature="e#10971#10972#0" expanded="true" />
-                <element signature="e#11050#11051#0" expanded="true" />
-                <element signature="e#11331#11332#0" expanded="true" />
-                <element signature="e#11361#11362#0" expanded="true" />
-                <element signature="e#11659#11660#0" expanded="true" />
-                <element signature="e#11729#11730#0" expanded="true" />
-                <element signature="e#12012#12013#0" expanded="true" />
-                <element signature="e#12043#12044#0" expanded="true" />
-                <element signature="e#12345#12346#0" expanded="true" />
-                <element signature="e#12385#12386#0" expanded="true" />
-                <element signature="e#12662#12663#0" expanded="true" />
-                <element signature="e#12691#12692#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -307,8 +254,8 @@
         <option value="CSS File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -342,7 +289,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/daui.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/daui.css" />
@@ -374,7 +320,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yang/service/LoginService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/service/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/domain/Admin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/dao/VipMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/VipMapper.xml" />
@@ -388,11 +333,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yang/domain/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipManageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/vipmanage.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/LoginController.java" />
       </list>
     </option>
   </component>
@@ -436,6 +383,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -630,9 +579,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -640,7 +587,7 @@
     <property name="SearchEverywhereHistoryKey" value="enter&#9;PSI&#9;JAVA://com.sun.javafx.scene.EnteredExitedHandler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541821152826" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541825757524" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -864,6 +811,7 @@
       <workItem from="1540960689238" duration="18821000" />
       <workItem from="1541032925078" duration="14334000" />
       <workItem from="1541323303789" duration="54348000" />
+      <workItem from="1541984384516" duration="3150000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1540961417038</created>
@@ -928,7 +876,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541765352541</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="complete modify vip info">
+      <created>1541821281422</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541821281422</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -964,7 +919,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126575000" />
+    <option name="totallyTimeSpent" value="131828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -979,7 +934,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -989,7 +944,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26560727" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.335141" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.335141" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3438178" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1043,167 +998,14 @@
     <MESSAGE value="wait merge" />
     <MESSAGE value="merge complete" />
     <MESSAGE value="fix all bigdecimal to float" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix all bigdecimal to float" />
+    <MESSAGE value="complete modify vip info" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete modify vip info" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1696#1702#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3007#3013#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4316#4322#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5625#5631#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#5;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6934#6940#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#5;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#6;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#6;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8242#8248#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#6;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#7;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#7;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9549#9555#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#7;n#tbody#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#11794#11821#0#HTML" expanded="true" />
-            <element signature="e#11918#11958#0#HTML" expanded="true" />
-            <element signature="e#11992#11998#0#HTML" expanded="true" />
-            <element signature="e#12306#12328#0#HTML" expanded="true" />
-            <element signature="e#13107#13134#0#HTML" expanded="true" />
-            <element signature="e#13231#13271#0#HTML" expanded="true" />
-            <element signature="e#13305#13311#0#HTML" expanded="true" />
-            <element signature="e#13610#13632#0#HTML" expanded="true" />
-            <element signature="e#14411#14438#0#HTML" expanded="true" />
-            <element signature="e#14535#14575#0#HTML" expanded="true" />
-            <element signature="e#14609#14615#0#HTML" expanded="true" />
-            <element signature="e#14918#14940#0#HTML" expanded="true" />
-            <element signature="e#15719#15746#0#HTML" expanded="true" />
-            <element signature="e#15843#15883#0#HTML" expanded="true" />
-            <element signature="e#15917#15923#0#HTML" expanded="true" />
-            <element signature="e#16223#16245#0#HTML" expanded="true" />
-            <element signature="e#17022#17049#0#HTML" expanded="true" />
-            <element signature="e#17146#17186#0#HTML" expanded="true" />
-            <element signature="e#17220#17226#0#HTML" expanded="true" />
-            <element signature="e#17532#17554#0#HTML" expanded="true" />
-            <element signature="e#18331#18358#0#HTML" expanded="true" />
-            <element signature="e#18455#18495#0#HTML" expanded="true" />
-            <element signature="e#18529#18535#0#HTML" expanded="true" />
-            <element signature="e#18851#18873#0#HTML" expanded="true" />
-            <element signature="e#19652#19679#0#HTML" expanded="true" />
-            <element signature="e#19776#19816#0#HTML" expanded="true" />
-            <element signature="e#19850#19856#0#HTML" expanded="true" />
-            <element signature="e#20159#20181#0#HTML" expanded="true" />
-            <element signature="e#20960#20987#0#HTML" expanded="true" />
-            <element signature="e#21084#21124#0#HTML" expanded="true" />
-            <element signature="e#21158#21164#0#HTML" expanded="true" />
-            <element signature="e#21477#21499#0#HTML" expanded="true" />
-            <element signature="e#22278#22305#0#HTML" expanded="true" />
-            <element signature="e#22402#22442#0#HTML" expanded="true" />
-            <element signature="e#22476#22482#0#HTML" expanded="true" />
-            <element signature="e#22786#22808#0#HTML" expanded="true" />
-            <element signature="e#23587#23614#0#HTML" expanded="true" />
-            <element signature="e#23711#23751#0#HTML" expanded="true" />
-            <element signature="e#23785#23791#0#HTML" expanded="true" />
-            <element signature="e#24093#24115#0#HTML" expanded="true" />
-            <element signature="e#24894#24921#0#HTML" expanded="true" />
-            <element signature="e#25018#25058#0#HTML" expanded="true" />
-            <element signature="e#25092#25098#0#HTML" expanded="true" />
-            <element signature="e#25401#25423#0#HTML" expanded="true" />
-            <element signature="e#26202#26229#0#HTML" expanded="true" />
-            <element signature="e#26326#26366#0#HTML" expanded="true" />
-            <element signature="e#26400#26406#0#HTML" expanded="true" />
-            <element signature="e#26705#26727#0#HTML" expanded="true" />
-            <element signature="e#27506#27533#0#HTML" expanded="true" />
-            <element signature="e#27630#27670#0#HTML" expanded="true" />
-            <element signature="e#27704#27710#0#HTML" expanded="true" />
-            <element signature="e#28013#28035#0#HTML" expanded="true" />
-            <element signature="e#28814#28841#0#HTML" expanded="true" />
-            <element signature="e#28938#28978#0#HTML" expanded="true" />
-            <element signature="e#29012#29018#0#HTML" expanded="true" />
-            <element signature="e#29321#29343#0#HTML" expanded="true" />
-            <element signature="e#30122#30149#0#HTML" expanded="true" />
-            <element signature="e#30246#30286#0#HTML" expanded="true" />
-            <element signature="e#30320#30326#0#HTML" expanded="true" />
-            <element signature="e#30628#30650#0#HTML" expanded="true" />
-            <element signature="e#31429#31456#0#HTML" expanded="true" />
-            <element signature="e#31553#31593#0#HTML" expanded="true" />
-            <element signature="e#31627#31633#0#HTML" expanded="true" />
-            <element signature="e#31936#31958#0#HTML" expanded="true" />
-            <element signature="e#32737#32764#0#HTML" expanded="true" />
-            <element signature="e#32861#32901#0#HTML" expanded="true" />
-            <element signature="e#32935#32941#0#HTML" expanded="true" />
-            <element signature="e#33247#33269#0#HTML" expanded="true" />
-            <element signature="e#34048#34075#0#HTML" expanded="true" />
-            <element signature="e#34172#34212#0#HTML" expanded="true" />
-            <element signature="e#34246#34252#0#HTML" expanded="true" />
-            <element signature="e#34555#34577#0#HTML" expanded="true" />
-            <element signature="e#35356#35383#0#HTML" expanded="true" />
-            <element signature="e#35480#35520#0#HTML" expanded="true" />
-            <element signature="e#35554#35560#0#HTML" expanded="true" />
-            <element signature="e#35863#35885#0#HTML" expanded="true" />
-            <element signature="e#36664#36691#0#HTML" expanded="true" />
-            <element signature="e#36788#36828#0#HTML" expanded="true" />
-            <element signature="e#36862#36868#0#HTML" expanded="true" />
-            <element signature="e#37169#37191#0#HTML" expanded="true" />
-            <element signature="e#37970#37997#0#HTML" expanded="true" />
-            <element signature="e#38094#38134#0#HTML" expanded="true" />
-            <element signature="e#38168#38174#0#HTML" expanded="true" />
-            <element signature="e#38473#38495#0#HTML" expanded="true" />
-            <element signature="e#39274#39301#0#HTML" expanded="true" />
-            <element signature="e#39398#39438#0#HTML" expanded="true" />
-            <element signature="e#39472#39478#0#HTML" expanded="true" />
-            <element signature="e#39784#39806#0#HTML" expanded="true" />
-            <element signature="e#40585#40612#0#HTML" expanded="true" />
-            <element signature="e#40709#40749#0#HTML" expanded="true" />
-            <element signature="e#40783#40789#0#HTML" expanded="true" />
-            <element signature="e#41090#41112#0#HTML" expanded="true" />
-            <element signature="e#41891#41918#0#HTML" expanded="true" />
-            <element signature="e#42015#42055#0#HTML" expanded="true" />
-            <element signature="e#42089#42095#0#HTML" expanded="true" />
-            <element signature="e#42394#42416#0#HTML" expanded="true" />
-            <element signature="e#43195#43222#0#HTML" expanded="true" />
-            <element signature="e#43319#43359#0#HTML" expanded="true" />
-            <element signature="e#43393#43399#0#HTML" expanded="true" />
-            <element signature="e#43700#43722#0#HTML" expanded="true" />
-            <element signature="e#44501#44528#0#HTML" expanded="true" />
-            <element signature="e#44625#44665#0#HTML" expanded="true" />
-            <element signature="e#44699#44705#0#HTML" expanded="true" />
-            <element signature="e#45010#45032#0#HTML" expanded="true" />
-            <element signature="e#45809#45836#0#HTML" expanded="true" />
-            <element signature="e#45933#45973#0#HTML" expanded="true" />
-            <element signature="e#46007#46013#0#HTML" expanded="true" />
-            <element signature="e#46316#46338#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallethis.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1239,16 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1311,16 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="5464" column="1" selection-start-line="5464" selection-start-column="1" selection-end-line="5464" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1420,9 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1334">
           <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1458,13 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="107" column="29" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="130" column="84" lean-forward="true" selection-start-line="130" selection-start-column="84" selection-end-line="130" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -1546,12 +1318,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/VipManagerService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        <state relative-caret-position="828">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipManageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1567,55 +1358,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipManageServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/VipManagerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        <state relative-caret-position="207">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/CartController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="112" selection-start-line="112" selection-end-line="117" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="55" column="39" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1012">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/vipmanage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        <state relative-caret-position="-659">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="138">
+          <caret line="51" selection-start-line="51" selection-end-line="56" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="78" />
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/productController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

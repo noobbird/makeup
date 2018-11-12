@@ -59,6 +59,11 @@ public class SuHomeController {
         return new MyStatus(res);
     }
 
+    @RequestMapping(value = "/charge")
+    public String charge(HttpServletRequest req, Vip vip){
+        return "charge";
+    }
+
 
 
 
