@@ -30,6 +30,7 @@
                 <em class="zicon zicon-home"></em>
                 <span>首页</span>
                 <em class="zicon zicon-arrowright"></em>
+
             </a>
             <a id="profile" href="#" class="" onclick="jump(this,'profile');" id="profile">
                 <em class="zicon zicon-user"></em>
