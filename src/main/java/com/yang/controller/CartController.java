@@ -68,8 +68,9 @@ public class CartController {
             shoppingRecordList.add(shoppingRecord);
         }
         try {
-            Vip vip=vipService.getVipByVid((String) request.getSession()
-            .getAttribute("userName"));
+            Vip vip=vipService.getVipByVid((String) request.getSession().getAttribute("userName"));
+            int i=0;
+
             if (amount>vip.getBanlance()){
                 returnFlag= Constant.BALANCEF_NOT_ENOUGH;
             }else {
