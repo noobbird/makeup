@@ -105,6 +105,7 @@
     <if test="banlance!=null">BANLANCE=#{banlance,jdbcType=DECIMAL}</if>
   WHERE VID=#{vid,jdbcType=VARCHAR}
 </update>
+
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.yang.domain.VipExample" >
     <!--
       WARNING - @mbggenerated
