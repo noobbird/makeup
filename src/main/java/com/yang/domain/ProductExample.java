@@ -1,6 +1,6 @@
 package com.yang.domain;
 
-import java.math.BigDecimal;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -335,52 +335,52 @@ public class ProductExample {
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceEqualTo(BigDecimal value) {
+        public Criteria andPointPriceEqualTo(Float value) {
             addCriterion("POINT_PRICE =", value, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceNotEqualTo(BigDecimal value) {
+        public Criteria andPointPriceNotEqualTo(Float value) {
             addCriterion("POINT_PRICE <>", value, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceGreaterThan(BigDecimal value) {
+        public Criteria andPointPriceGreaterThan(Float value) {
             addCriterion("POINT_PRICE >", value, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceGreaterThanOrEqualTo(BigDecimal value) {
+        public Criteria andPointPriceGreaterThanOrEqualTo(Float value) {
             addCriterion("POINT_PRICE >=", value, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceLessThan(BigDecimal value) {
+        public Criteria andPointPriceLessThan(Float value) {
             addCriterion("POINT_PRICE <", value, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceLessThanOrEqualTo(BigDecimal value) {
+        public Criteria andPointPriceLessThanOrEqualTo(Float value) {
             addCriterion("POINT_PRICE <=", value, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceIn(List<BigDecimal> values) {
+        public Criteria andPointPriceIn(List<Float> values) {
             addCriterion("POINT_PRICE in", values, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceNotIn(List<BigDecimal> values) {
+        public Criteria andPointPriceNotIn(List<Float> values) {
             addCriterion("POINT_PRICE not in", values, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andPointPriceBetween(Float value1, Float value2) {
             addCriterion("POINT_PRICE between", value1, value2, "pointPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPointPriceNotBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andPointPriceNotBetween(Float value1, Float value2) {
             addCriterion("POINT_PRICE not between", value1, value2, "pointPrice");
             return (Criteria) this;
         }
@@ -585,52 +585,52 @@ public class ProductExample {
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceEqualTo(BigDecimal value) {
+        public Criteria andCashPriceEqualTo(Float value) {
             addCriterion("CASH_PRICE =", value, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceNotEqualTo(BigDecimal value) {
+        public Criteria andCashPriceNotEqualTo(Float value) {
             addCriterion("CASH_PRICE <>", value, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceGreaterThan(BigDecimal value) {
+        public Criteria andCashPriceGreaterThan(Float value) {
             addCriterion("CASH_PRICE >", value, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceGreaterThanOrEqualTo(BigDecimal value) {
+        public Criteria andCashPriceGreaterThanOrEqualTo(Float value) {
             addCriterion("CASH_PRICE >=", value, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceLessThan(BigDecimal value) {
+        public Criteria andCashPriceLessThan(Float value) {
             addCriterion("CASH_PRICE <", value, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceLessThanOrEqualTo(BigDecimal value) {
+        public Criteria andCashPriceLessThanOrEqualTo(Float value) {
             addCriterion("CASH_PRICE <=", value, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceIn(List<BigDecimal> values) {
+        public Criteria andCashPriceIn(List<Float> values) {
             addCriterion("CASH_PRICE in", values, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceNotIn(List<BigDecimal> values) {
+        public Criteria andCashPriceNotIn(List<Float> values) {
             addCriterion("CASH_PRICE not in", values, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andCashPriceBetween(Float value1, Float value2) {
             addCriterion("CASH_PRICE between", value1, value2, "cashPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCashPriceNotBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andCashPriceNotBetween(Float value1, Float value2) {
             addCriterion("CASH_PRICE not between", value1, value2, "cashPrice");
             return (Criteria) this;
         }

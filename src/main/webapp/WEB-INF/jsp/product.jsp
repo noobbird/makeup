@@ -10,63 +10,25 @@
 <head>
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
     <link rel="stylesheet" type="text/css" href="/css/dwui.css?20180831" />
     <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/common.css" />
     <script src="/js/script.js?20180831"></script>
 </head>
 <body>
+<div class="novBar">
+    <button name="cashShopping" onclick="shoppingMethod(1)">现金购物</button>
+    <button name="pointShopping" onclick="shoppingMethod(2)">积分购物</button>
+</div>
 
-
-    <div class="daui_col">
-        <div class="top">
-            <div class="title">
-                <span class="daui_icon1"></span>
-                <span>积分购物区</span>
-            </div>
-            <div class="parme">
-                <span>您的积分:205.00</span>
-            </div>
-            <div class="btns">
-                <div>
-                    <a href="https://www.gxmyvips.com/cart/orders" class="daui_btn white medium">订单记录</a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="wrap">
-            <form id="mform1">
-                <table class="daui_table">
-                    <thead><tr>
-                        <th width="70">ID</th>
-                        <th>商品</th>
-                        <th width="140">价格</th>
-                        <th width="80">销量</th>
-                        <th width="80">人气</th>
-                        <th width="130">购买</th>
-                        <th width="60">购物车</th>
-                    </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-                <input type="hidden" name="type" value="1">
-            </form>
-            <p style="text-align: right; padding-top: 5px;">
-                <a href="javascript:Submit(1);" class="daui_btn blue big">购买</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="daui_col">
+    <div class="daui_col" id="cashShoppingDiv">
         <div class="top">
             <div class="title">
                 <span class="daui_icon1"></span>
                 <span>现金购物区</span>
             </div>
             <div class="parme">
-                <span>您的钱包:-200.00</span>
+               您的钱包: <span id="banlance_span"></span>
             </div>
             <div class="btns">
                 <div>
@@ -79,10 +41,12 @@
                     <thead><tr>
                         <th width="70">ID</th>
                         <th>商品</th>
-                        <th width="140">价格</th>
-                        <th width="80">销量</th>
-                        <th width="80">人气</th>
-                        <th width="130">购买</th>
+                        <th >资金价格</th>
+                        <th >积分价格</th>
+                        <th >销量</th>
+                        <th >人气</th>
+                        <th width="30">购买</th>
+                        <th>购物车</th>
                     </tr>
                     </thead>
                 <tbody></tbody>
@@ -95,10 +59,80 @@
 
         </div>
     </div>
+<div class="daui_col" id="pointShoppingDiv">
+    <div class="top">
+        <div class="title">
+            <span class="daui_icon1"></span>
+            <span>积分购物区</span>
+        </div>
+        <div class="parme">
+            您的积分:<span id="point_span"></span>
+        </div>
+        <div class="btns">
+            <div>
+                <a href="https://www.gxmyvips.com/cart/orders" class="daui_btn white medium">订单记录</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrap">
+        <form id="mform1">
+            <table class="daui_table">
+                <thead><tr>
+                    <th width="70">ID</th>
+                    <th>商品</th>
+                    <th >资金价格</th>
+                    <th >积分价格</th>
+                    <th >销量</th>
+                    <th >人气</th>
+                    <th width="30">购买</th>
+                    <th>购物车</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <input type="hidden" name="type" value="1">
+        </form>
+        <p style="text-align: right; padding-top: 5px;">
+            <a href="javascript:Submit(1);" class="daui_btn blue big">购买</a>
+        </p>
+    </div>
+</div>
     <script>
         $(() =>{
             searchAllProduct()
+            shoppingMethod(1);
+            getLoginVip()
         });
+
+        function getLoginVip() {
+            $.get('/vip/getLoginVip','',(results) =>{
+                $("#banlance_span").text(results.banlance);
+                $('#point_span').text(results.points);
+            },'json');
+        }
+
+
+        function shoppingMethod(x) {
+            //现金购物
+            if (x==1){
+                $('.novBar button[name="pointShopping"]').css("background","#1eb9ff");
+                $('.novBar button[name="cashShopping"]').css("background","#0d97ff");
+                $('#pointShoppingDiv').css("display","none");
+                $('#cashShoppingDiv').css("display","inline");
+            }else{     //积分购物
+                $('.novBar button[name="cashShopping"]').css("background","#1eb9ff");
+                $('.novBar button[name="pointShopping"]').css("background","#0d97ff");
+                $('#cashShoppingDiv').css("display","none");
+                $('#pointShoppingDiv').css("display","inline");
+            }
+        }
+
+        /**
+         * 查询所有商品
+         * */
         function searchAllProduct() {
             $.get('/product/findProduceByWhere','',function (results) {
                 var str="";
@@ -111,6 +145,7 @@
                                 <img src="../images/1.jpg" >
                                 &nbsp;${ productVO.productName}</a>
                         </td>
+                         <td class="c">${ productVO.pointPrice}</td>
                         <td class="c">${ productVO.cashPrice}</td>
                         <td class="c">${ productVO.saleCount}</td>
                         <td class="c">${ productVO.productHot}</td>

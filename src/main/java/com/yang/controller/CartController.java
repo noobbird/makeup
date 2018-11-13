@@ -1,15 +1,10 @@
 package com.yang.controller;
 
+import com.yang.dao.PocketRecordMapper;
 import com.yang.dao.ProductMapper;
 import com.yang.dao.VipMapper;
-import com.yang.domain.Cart;
-import com.yang.domain.Product;
-import com.yang.domain.ShoppingRecord;
-import com.yang.domain.Vip;
-import com.yang.service.CartService;
-import com.yang.service.ProductService;
-import com.yang.service.ShoppingRecordService;
-import com.yang.service.VipService;
+import com.yang.domain.*;
+import com.yang.service.*;
 import com.yang.util.Constant;
 import com.yang.vo.ProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +31,9 @@ public class CartController {
     @Autowired
     private VipService vipService;
 
+    @Autowired
+    private PocketRecordService pocketRecordService;
+
     @ResponseBody
     @RequestMapping(value = "/findCartByWhere")
     public List<Cart> findCartByWhere(HttpServletRequest request){
@@ -47,7 +45,7 @@ public class CartController {
 
     @ResponseBody
     @RequestMapping(value = "/purchase")
-    public String purchase(HttpServletRequest request,@RequestParam("oId") String oId){
+    public String purchase(HttpServletRequest request,@RequestParam("oId") String oId,@RequestParam("shoppingMethod") String shoppingMethod){
         String returnFlag="";
         Float amount =new Float(0.00);
         String[] oids= oId.split(",");
@@ -75,8 +73,20 @@ public class CartController {
                 for(ShoppingRecord shoppingRecord:shoppingRecordList){
                     shoppingRecordService.insertShoppingRecord(shoppingRecord);
                 }
-                vip.setBanlance(vip.getBanlance()-amount);
-                vipService.updateVipByVid(vip);
+                //插入资金记录
+                PocketRecord pocketRecord = new PocketRecord();
+                pocketRecord.setType(Constant.POCKET_SHOPPING);
+                pocketRecord.setAmount(amount);
+                pocketRecord.setPointOrCash(Constant.SHOPPING_BY_CASH);
+                pocketRecord.setRelatedVipid(vip.getVid());
+
+                pocketRecordService.insertPocketRecord(pocketRecord);
+
+                //修改用户余额
+                Vip newVip= new Vip();
+                newVip.setoId(vip.getoId());
+                newVip.setBanlance(vip.getBanlance()-amount);
+                vipService.updateVipByVid(newVip);
                 returnFlag=Constant.SUCCESS;
             }
         } catch (Exception e) {
@@ -107,6 +117,16 @@ public class CartController {
             flag=  cartService.insertCart(cart);
         }
         return String.valueOf(flag);
+    }
+    @ResponseBody
+    @RequestMapping(value = "/updateCartCount")
+    public String updateCartCount(HttpServletRequest request,Cart cart){
+        int flag =cartService.updateCartByKey(cart);
+        if (flag==1)
+            return Constant.SUCCESS;
+        else
+            return Constant.FAILURE;
+
     }
 
 }

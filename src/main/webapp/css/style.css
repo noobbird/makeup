@@ -1078,3 +1078,14 @@ textarea.daui_input{
     border-radius:4px;
     text-decoration:none;
 }
+.novBar{
+    background: #5dcfff;
+    display: flex;
+}
+.novBar button{
+    margin: 0;
+    padding: 10px;
+    background: #1eb9ff;
+    border: 0;
+    font-size: 14px;
+}

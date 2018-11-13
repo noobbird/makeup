@@ -1,6 +1,5 @@
 package com.yang.domain;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -946,52 +945,52 @@ public class VipExample {
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceEqualTo(BigDecimal value) {
+        public Criteria andBanlanceEqualTo(Float value) {
             addCriterion("BANLANCE =", value, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceNotEqualTo(BigDecimal value) {
+        public Criteria andBanlanceNotEqualTo(Float value) {
             addCriterion("BANLANCE <>", value, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceGreaterThan(BigDecimal value) {
+        public Criteria andBanlanceGreaterThan(Float value) {
             addCriterion("BANLANCE >", value, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceGreaterThanOrEqualTo(BigDecimal value) {
+        public Criteria andBanlanceGreaterThanOrEqualTo(Float value) {
             addCriterion("BANLANCE >=", value, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceLessThan(BigDecimal value) {
+        public Criteria andBanlanceLessThan(Float value) {
             addCriterion("BANLANCE <", value, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceLessThanOrEqualTo(BigDecimal value) {
+        public Criteria andBanlanceLessThanOrEqualTo(Float value) {
             addCriterion("BANLANCE <=", value, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceIn(List<BigDecimal> values) {
+        public Criteria andBanlanceIn(List<Float> values) {
             addCriterion("BANLANCE in", values, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceNotIn(List<BigDecimal> values) {
+        public Criteria andBanlanceNotIn(List<Float> values) {
             addCriterion("BANLANCE not in", values, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andBanlanceBetween(Float value1, Float value2) {
             addCriterion("BANLANCE between", value1, value2, "banlance");
             return (Criteria) this;
         }
 
-        public Criteria andBanlanceNotBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andBanlanceNotBetween(Float value1, Float value2) {
             addCriterion("BANLANCE not between", value1, value2, "banlance");
             return (Criteria) this;
         }
@@ -1006,52 +1005,52 @@ public class VipExample {
             return (Criteria) this;
         }
 
-        public Criteria andPointsEqualTo(BigDecimal value) {
+        public Criteria andPointsEqualTo(Float value) {
             addCriterion("POINTS =", value, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsNotEqualTo(BigDecimal value) {
+        public Criteria andPointsNotEqualTo(Float value) {
             addCriterion("POINTS <>", value, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsGreaterThan(BigDecimal value) {
+        public Criteria andPointsGreaterThan(Float value) {
             addCriterion("POINTS >", value, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsGreaterThanOrEqualTo(BigDecimal value) {
+        public Criteria andPointsGreaterThanOrEqualTo(Float value) {
             addCriterion("POINTS >=", value, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsLessThan(BigDecimal value) {
+        public Criteria andPointsLessThan(Float value) {
             addCriterion("POINTS <", value, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsLessThanOrEqualTo(BigDecimal value) {
+        public Criteria andPointsLessThanOrEqualTo(Float value) {
             addCriterion("POINTS <=", value, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsIn(List<BigDecimal> values) {
+        public Criteria andPointsIn(List<Float> values) {
             addCriterion("POINTS in", values, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsNotIn(List<BigDecimal> values) {
+        public Criteria andPointsNotIn(List<Float> values) {
             addCriterion("POINTS not in", values, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andPointsBetween(Float value1, Float value2) {
             addCriterion("POINTS between", value1, value2, "points");
             return (Criteria) this;
         }
 
-        public Criteria andPointsNotBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andPointsNotBetween(Float value1, Float value2) {
             addCriterion("POINTS not between", value1, value2, "points");
             return (Criteria) this;
         }

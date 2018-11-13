@@ -61,6 +61,14 @@
                 <td>${vip.bankName}</td>
             </tr>
             <tr>
+                <th>余额</th>
+                <td>${vip.banlance}</td>
+            </tr>
+            <tr>
+                <th>积分</th>
+                <td>${vip.points}</td>
+            </tr>
+            <tr>
                 <th>收款卡号</th>
                 <td>${vip.bankNumber}</td>
             </tr>

@@ -1,11 +1,9 @@
 import com.yang.dao.AdminMapper;
+import com.yang.dao.PocketRecordMapper;
 import com.yang.dao.VidGeneratorMapper;
 import com.yang.dao.VipMapper;
 import com.yang.domain.*;
-import com.yang.service.CartService;
-import com.yang.service.LoginService;
-import com.yang.service.ProfileService;
-import com.yang.service.VipManagerService;
+import com.yang.service.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +27,31 @@ public class implTest {
     LoginService loginService;
     @Autowired
     VipManagerService vipManagerService;
+    @Autowired
+    PocketRecordMapper pocketRecordMappe;
+
+    @Autowired
+    PocketRecordService pocketRecordService;
+
+    @Test
+    public void testinsert(){
+        PocketRecord pocketRecord = new PocketRecord();
+        pocketRecord.setAmount(new Float(1000));
+        pocketRecord.setType("1");
+        pocketRecordMappe.insert(pocketRecord);
+    }
+
+    @Test
+    public void findPocketRecord(){
+        PocketRecord pocketRecord = new PocketRecord();
+        pocketRecord.setRelatedVipid("MY103821");
+       List<PocketRecord> pocketRecords = pocketRecordService.findPocketRecordByWhere(pocketRecord);
+        for (PocketRecord pocket: pocketRecords
+             ) {
+            java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+            System.out.println(sdf.format(pocket.getTime()));
+        }
+    }
 
     @Test
     public void find(){

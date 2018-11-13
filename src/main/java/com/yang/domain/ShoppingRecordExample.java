@@ -1,6 +1,5 @@
 package com.yang.domain;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -516,52 +515,52 @@ public class ShoppingRecordExample {
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceEqualTo(BigDecimal value) {
+        public Criteria andProductPriceEqualTo(Float value) {
             addCriterion("PRODUCT_PRICE =", value, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceNotEqualTo(BigDecimal value) {
+        public Criteria andProductPriceNotEqualTo(Float value) {
             addCriterion("PRODUCT_PRICE <>", value, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceGreaterThan(BigDecimal value) {
+        public Criteria andProductPriceGreaterThan(Float value) {
             addCriterion("PRODUCT_PRICE >", value, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceGreaterThanOrEqualTo(BigDecimal value) {
+        public Criteria andProductPriceGreaterThanOrEqualTo(Float value) {
             addCriterion("PRODUCT_PRICE >=", value, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceLessThan(BigDecimal value) {
+        public Criteria andProductPriceLessThan(Float value) {
             addCriterion("PRODUCT_PRICE <", value, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceLessThanOrEqualTo(BigDecimal value) {
+        public Criteria andProductPriceLessThanOrEqualTo(Float value) {
             addCriterion("PRODUCT_PRICE <=", value, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceIn(List<BigDecimal> values) {
+        public Criteria andProductPriceIn(List<Float> values) {
             addCriterion("PRODUCT_PRICE in", values, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceNotIn(List<BigDecimal> values) {
+        public Criteria andProductPriceNotIn(List<Float> values) {
             addCriterion("PRODUCT_PRICE not in", values, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andProductPriceBetween(Float value1, Float value2) {
             addCriterion("PRODUCT_PRICE between", value1, value2, "productPrice");
             return (Criteria) this;
         }
 
-        public Criteria andProductPriceNotBetween(BigDecimal value1, BigDecimal value2) {
+        public Criteria andProductPriceNotBetween(Float value1, Float value2) {
             addCriterion("PRODUCT_PRICE not between", value1, value2, "productPrice");
             return (Criteria) this;
         }
