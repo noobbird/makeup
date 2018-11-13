@@ -1,6 +1,7 @@
 package com.yang.domain;
 
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import com.yang.util.Constant;
 
 import java.util.Date;
@@ -248,5 +249,6 @@ public class PocketRecord {
         numberToName.put(Constant.POCKET_SHOPPING,Constant.POCKET_SHOPPING_NAME);
         numberToName.put(Constant.SHOPPING_BY_CASH,Constant.SHOPPING_BY_CASH_NAME);
         numberToName.put(Constant.SHOPPING_BY_POINT,Constant.SHOPPING_BY_POINT_NAME);
+        numberToName.put(Constant.POCKET_RECHARGE,Constant.POCKET_RECHARGE_NAME);
     }
 }

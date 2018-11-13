@@ -7,40 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72843166-8c29-45b0-a358-acd282c6c410" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/controller/PocketRecordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/controller/VipController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/service/PocketRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/PocketRecordServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/domain/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/domain/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecordExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecordExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/domain/ProductExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/domain/ProductExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/domain/ShoppingRecordExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/domain/ShoppingRecordExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/domain/VipExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/domain/VipExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/util/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CartMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PocketRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PocketRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/implTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/implTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yang/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yang/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yang/domain/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yang/domain/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yang/service/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yang/service/CartService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yang/service/impl/CartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yang/service/impl/CartServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CartMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/implTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/implTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,20 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wallet.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wallet.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallet.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2463">
-              <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+            <state relative-caret-position="350">
+              <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PocketRecordMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PocketRecordMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PocketRecordMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="151" column="17" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="17" />
+            <state relative-caret-position="219">
+              <caret line="149" column="42" lean-forward="true" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -130,8 +99,8 @@
       <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/util/Constant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+            <state relative-caret-position="297">
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -139,8 +108,8 @@
       <file leaf-file-name="product.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            <state relative-caret-position="-803">
+              <caret line="174" column="34" lean-forward="true" selection-start-line="174" selection-start-column="34" selection-end-line="174" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -148,8 +117,8 @@
       <file leaf-file-name="PocketRecord.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5275">
-              <caret line="249" column="85" selection-start-line="249" selection-start-column="85" selection-end-line="249" selection-end-column="85" />
+            <state relative-caret-position="147">
+              <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -240,13 +209,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/VipController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cart.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yang/util/Constant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/PocketRecordController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/service/impl/PocketRecordServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallet.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yang/util/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecord.java" />
       </list>
     </option>
   </component>
@@ -750,7 +719,7 @@
       <workItem from="1541983485997" duration="799000" />
       <workItem from="1541986424709" duration="18927000" />
       <workItem from="1542069792339" duration="18111000" />
-      <workItem from="1542110098030" duration="2803000" />
+      <workItem from="1542110098030" duration="5315000" />
     </task>
     <task id="LOCAL-00001" summary="产品页和购物车完成">
       <created>1541686690392</created>
@@ -815,7 +784,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541988248609</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="积分">
+      <created>1542113728225</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542113728225</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -851,7 +827,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104833000" />
+    <option name="totallyTimeSpent" value="107345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -869,14 +845,14 @@
       <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" visible="true" weight="0.17567568" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" visible="true" weight="0.25675675" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49840087" weight="0.119914345" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49840087" weight="0.11824324" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32976446" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.17558886" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.17398648" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.73071104" weight="0.17237687" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.17023554" />
@@ -941,7 +917,8 @@
     <MESSAGE value="git上传" />
     <MESSAGE value="测试" />
     <MESSAGE value="合资者" />
-    <option name="LAST_COMMIT_MESSAGE" value="合资者" />
+    <MESSAGE value="积分" />
+    <option name="LAST_COMMIT_MESSAGE" value="积分" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1269,30 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5275">
-          <caret line="249" column="85" selection-start-line="249" selection-start-column="85" selection-end-line="249" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/util/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1337,17 +1290,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallet.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PocketRecordMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2463">
-          <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+        <state relative-caret-position="219">
+          <caret line="149" column="42" lean-forward="true" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PocketRecordMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/util/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="151" column="17" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="17" />
+        <state relative-caret-position="297">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/PocketRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-803">
+          <caret line="174" column="34" lean-forward="true" selection-start-line="174" selection-start-column="34" selection-end-line="174" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
         </state>
       </provider>
     </entry>

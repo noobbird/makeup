@@ -19,4 +19,7 @@ public class Constant {
     //退款
     public static  final String POCKET_REFUND="4";
     public static  final String POCKET_REFUND_NAME="退款";
+    //充值
+    public static final String POCKET_RECHARGE="5";
+    public static final String POCKET_RECHARGE_NAME="充值";
 }
