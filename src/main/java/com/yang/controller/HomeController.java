@@ -44,10 +44,6 @@ public class HomeController {
 
     @RequestMapping(value = "/team")
     public String team(HttpServletRequest request){
-//        HttpSession session = request.getSession();
-//        String vid = (String)session.getAttribute("userName");
-//        Vip vip = profileService.getProfile(vid);
-//        request.setAttribute("vip", vip);
         return "team";
 
     }
@@ -55,9 +51,9 @@ public class HomeController {
     @RequestMapping(value = "/cart")
     public String cart(HttpServletRequest request){
         HttpSession session = request.getSession();
-//        String vid = (String)session.getAttribute("userName");
-//        Vip vip = profileService.getProfile(vid);
-//        request.setAttribute("vip", vip);
+        String vid = (String)session.getAttribute("userName");
+        Vip vip = profileService.getProfile(vid);
+        request.setAttribute("vip", vip);
         return "cart";
 
     }
@@ -69,6 +65,10 @@ public class HomeController {
      */
     @RequestMapping(value = "/product")
     public String product(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        String vid = (String)session.getAttribute("userName");
+        Vip vip = profileService.getProfile(vid);
+        request.setAttribute("vip", vip);
         return "product";
 
     }

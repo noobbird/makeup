@@ -24,6 +24,6 @@ public class VipServiceImpl implements VipService {
 
     @Override
     public int updateVipByVid(Vip vip) {
-        return vipMapper.updateVipByVid(vip);
+        return vipMapper.updateByPrimaryKeySelective(vip);
     }
 }

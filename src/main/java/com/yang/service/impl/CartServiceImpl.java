@@ -36,7 +36,7 @@ public class CartServiceImpl implements CartService {
 
     @Override
     public int updateCartByKey(Cart cart) {
-        return cartMapper.updateByPrimaryKey(cart);
+        return cartMapper.updateByPrimaryKeySelective(cart);
     }
 
     @Override
