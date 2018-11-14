@@ -46,23 +46,29 @@ public class VipManageServiceImpl implements VipManagerService {
         VipExample vipExample = new VipExample();
         vipExample.createCriteria().andVidEqualTo(vid);
         List<Vip>  vips= vipMapper.selectByExample(vipExample);
-
+        float newBanlance;
         if(vips.size() != 1){
             chargeMessage.setCode(-1);
             chargeMessage.setErrMsg("user doesn't exist");
             return chargeMessage;
         }
         Vip vip = vips.get(0);
-        float newBanlance = vip.getBanlance()+amount;
-        vip.setBanlance(newBanlance);
-        int res = vipMapper.updateByPrimaryKey(vip);
-        PocketRecord pocketRecord = new PocketRecord();
-        pocketRecord.setAmount(newBanlance);
-        pocketRecord.setType("5");
-        pocketRecord.setRelatedVipid(vid);
-        pocketRecord.setTime(new Date());
-        pocketRecord.setPointOrCash("1");
-        pocketRecordMapper.insert(pocketRecord);
+        if(amount == 0){
+            newBanlance = vip.getBanlance();
+        }
+        else{
+            newBanlance = vip.getBanlance()+amount;
+            vip.setBanlance(newBanlance);
+            int res = vipMapper.updateByPrimaryKey(vip);
+            PocketRecord pocketRecord = new PocketRecord();
+            pocketRecord.setAmount(newBanlance);
+            pocketRecord.setType("5");
+            pocketRecord.setRelatedVipid(vid);
+            pocketRecord.setTime(new Date());
+            pocketRecord.setPointOrCash("1");
+            pocketRecordMapper.insert(pocketRecord);
+        }
+
         chargeMessage.setCode(1);
         chargeMessage.setBanlance(newBanlance);
         chargeMessage.setVid(vid);
