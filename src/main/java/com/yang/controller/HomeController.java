@@ -75,40 +75,29 @@ public class HomeController {
 
     @RequestMapping(value = "/wallethis")
     public String wallethis(HttpServletRequest request){
-//        HttpSession session = request.getSession();
-//        String vid = (String)session.getAttribute("userName");
-//        Vip vip = profileService.getProfile(vid);
-//        request.setAttribute("vip", vip);
         return "wallethis";
 
     }
 
     @RequestMapping(value = "/wallet")
     public String wallet(HttpServletRequest request){
-//        HttpSession session = request.getSession();
-//        String vid = (String)session.getAttribute("userName");
-//        Vip vip = profileService.getProfile(vid);
-//        request.setAttribute("vip", vip);
         return "wallet";
 
     }
     @RequestMapping(value = "/jifen")
     public String jifen(HttpServletRequest request){
-//        HttpSession session = request.getSession();
-//        String vid = (String)session.getAttribute("userName");
-//        Vip vip = profileService.getProfile(vid);
-//        request.setAttribute("vip", vip);
         return "jifen";
 
     }
 
     @RequestMapping(value = "/pswd")
     public String pswd(HttpServletRequest request){
-//        HttpSession session = request.getSession();
-//        String vid = (String)session.getAttribute("userName");
-//        Vip vip = profileService.getProfile(vid);
-//        request.setAttribute("vip", vip);
         return "pswd";
+
+    }
+    @RequestMapping(value = "/shoppingRecord")
+    public String shoppingRecord(HttpServletRequest request){
+        return "shoppingRecord";
 
     }
 

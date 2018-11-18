@@ -185,6 +185,7 @@
                     `;
                 }
                 $('#cartCashForm tbody').html(str);
+                $('#cartPointForm tbody').html(str);
 
             },'json');
         }

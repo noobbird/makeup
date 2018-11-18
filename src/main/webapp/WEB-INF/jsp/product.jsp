@@ -142,7 +142,7 @@
                         <td name="productId">${ productVO.productId}</td>
                         <td>
                             <a href="javascript:Daui_iframe('https://www.gxmyvips.com/cart/view/32');" style="vertical-align: top">
-                                <img src="../images/1.jpg" >
+                                <img src="${ productVO.picUrl}" >
                                 &nbsp;${ productVO.productName}</a>
                         </td>
                          <td class="c">${ productVO.pointPrice}</td>
