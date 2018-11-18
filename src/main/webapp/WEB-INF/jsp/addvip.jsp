@@ -51,10 +51,12 @@
             </div>
         </div>
         <div class="line">
-            <p class="title">推荐人</p>
+            <p class="title">推荐人ID</p>
             <div class="inputs">
-                <input type="text" maxlength="32"  value="马走日" name="recommendVid" class="daui_input" >
+                <input type="text" id="input-recvid" maxlength="32"  value="MY103821" name="recommendVid" class="daui_input" >
+                <input type="hidden" id="input-recvname" maxlength="32" name="recommendPerson" class="daui_input" >
             </div>
+            <span id="recname-tip" style="margin-left: -80px; color: #999999;margin-top: 5px"></span>
         </div>
         <div class="line">
             <p class="title">地址</p>
@@ -105,7 +107,7 @@
         </div>
         <div id="fail" class="alert alert-warning" style="display: none" >
             <a href="#" class="close">&times;</a>
-            <strong>添加失败！</strong>您的网络连接可能有问题。
+            <strong>添加失败！</strong>
         </div>
     </form>
 </div>
@@ -115,26 +117,56 @@
             $("#success").hide();
             $("#fail").hide();
         });
+        $('#input-recvid').keyup(function () {
+            if($('#input-recvid').val().length == 8){
+                $.ajax("/api/charge",{
+                    type:'POST',
+                    dataType: 'json',
+                    data:{
+                        'vid':$('#input-recvid').val(),
+                        'amount':0,
+                    },
+                    success:function (resp) {
+                        if(resp.code = 1){
+                            $('#recname-tip').text(resp.vname);
+                            $('#input-recvname').val(resp.vname);
+                        }
+
+                    }
+                })
+            }
+            else{
+                $('#recname-tip').text("");
+            }
+        })
     });
     function submitVip(){
-        $.ajax({
-            url:'/insertVip',
-            type:'POST',
-            dataType:"json",
-            data:$("#mForm").serialize(),
-            success: function(vip){
-                // $('.daui_loading').hide();
-                // alert(vip.vid+vip.vPassword+vip.payPassword);
-                $('#success strong').text("登录成功");
-                $('#success strong').append("<br/> 登录名: " +
-                    vip.vid+"<br/>登录密码: "+vip.vPassword+ "<br/> 支付密码: "+vip.payPassword);
-                $('#success').show();
-            },
-            error:function(){
-                $('.daui_loading').hide();
-                $('#fail').show();
-            }
-        });
+        if($('#input-recvname').val()==""){
+            $('#fail strong').text("推荐人ID有误");
+            $('#fail').show();
+        }
+        else{
+            $.ajax({
+                url:'/insertVip',
+                type:'POST',
+                dataType:"json",
+                data:$("#mForm").serialize(),
+                success: function(vip){
+                    // $('.daui_loading').hide();
+                    // alert(vip.vid+vip.vPassword+vip.payPassword);
+                    $('#success strong').text("登录成功");
+                    $('#success strong').append("<br/> 登录名: " +
+                        vip.vid+"<br/>登录密码: "+vip.vPassword+ "<br/> 支付密码: "+vip.payPassword);
+                    $('#success').show();
+                },
+                error:function(){
+                    $('#fail strong').text("网络连接异常！");
+                    $('#fail').show();
+                }
+            });
+        }
+
+
     }
 </script>
 </body>

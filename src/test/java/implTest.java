@@ -1,7 +1,4 @@
-import com.yang.dao.AdminMapper;
-import com.yang.dao.PocketRecordMapper;
-import com.yang.dao.VidGeneratorMapper;
-import com.yang.dao.VipMapper;
+import com.yang.dao.*;
 import com.yang.domain.*;
 import com.yang.service.*;
 import org.junit.Test;
@@ -114,4 +111,11 @@ public class implTest {
         System.out.println(vidGenerator);
     }
 
+    @Autowired
+    AwardRecordMapper awardRecordMapper;
+    @Test
+    public void getRecmd(){
+        List<RecommendHis> recommendHis= awardRecordMapper.selectRcmdHis();
+        System.out.println(recommendHis);
+    }
 }

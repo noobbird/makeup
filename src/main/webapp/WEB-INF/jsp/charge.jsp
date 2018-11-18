@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div class="submit" style="width: 200px; margin: auto">
+    <div class="charge-button" style="width: 200px; margin: auto">
         <a href="javascript:submitVip();" class="daui_btn big blue">充值</a>
     </div>
     <div id="success" class="alert alert-success" style="display: none">
@@ -77,7 +77,7 @@
             $("#success").hide();
             $("#fail").hide();
         });
-        $('.submit').click(function (){
+        $('.charge-button').click(function (){
             $.ajax({
                 url:'/api/charge',
                 type:'POST',
