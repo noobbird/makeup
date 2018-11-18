@@ -1,15 +1,15 @@
 package com.yang.service.impl;
 
+import com.yang.dao.PocketRecordMapper;
 import com.yang.dao.VidGeneratorMapper;
 import com.yang.dao.VipMapper;
-import com.yang.domain.VidGenerator;
-import com.yang.domain.Vip;
-import com.yang.domain.VipExample;
+import com.yang.domain.*;
 import com.yang.service.VipManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.nio.charset.CharacterCodingException;
 import java.util.Date;
 import java.util.List;
 
@@ -19,6 +19,8 @@ public class VipManageServiceImpl implements VipManagerService {
     VipMapper vipMapper;
     @Autowired
     VidGeneratorMapper vidGeneratorMapper;
+    @Autowired
+    PocketRecordMapper pocketRecordMapper;
 
     @Override
     public Vip insert(Vip vip) {
@@ -36,6 +38,42 @@ public class VipManageServiceImpl implements VipManagerService {
         vidGeneratorMapper.updateByPrimaryKey(vidGenerator);
         int res = vipMapper.insert(vip);
         return vip;
+    }
+
+    @Override
+    public ChargeMessage charge(String vid, int amount) {
+        ChargeMessage chargeMessage = new ChargeMessage();
+        VipExample vipExample = new VipExample();
+        vipExample.createCriteria().andVidEqualTo(vid);
+        List<Vip>  vips= vipMapper.selectByExample(vipExample);
+        float newBanlance;
+        if(vips.size() != 1){
+            chargeMessage.setCode(-1);
+            chargeMessage.setErrMsg("user doesn't exist");
+            return chargeMessage;
+        }
+        Vip vip = vips.get(0);
+        if(amount == 0){
+            newBanlance = vip.getBanlance();
+        }
+        else{
+            newBanlance = vip.getBanlance()+amount;
+            vip.setBanlance(newBanlance);
+            int res = vipMapper.updateByPrimaryKey(vip);
+            PocketRecord pocketRecord = new PocketRecord();
+            pocketRecord.setAmount(newBanlance);
+            pocketRecord.setType("5");
+            pocketRecord.setRelatedVipid(vid);
+            pocketRecord.setTime(new Date());
+            pocketRecord.setPointOrCash("1");
+            pocketRecordMapper.insert(pocketRecord);
+        }
+
+        chargeMessage.setCode(1);
+        chargeMessage.setBanlance(newBanlance);
+        chargeMessage.setVid(vid);
+        chargeMessage.setVname(vip.getvName());
+        return chargeMessage;
     }
 
     @Override

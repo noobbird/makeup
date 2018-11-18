@@ -1,5 +1,6 @@
 package com.yang.controller;
 
+import com.yang.domain.ChargeMessage;
 import com.yang.domain.MyStatus;
 import com.yang.domain.Vip;
 import com.yang.service.VipManagerService;
@@ -57,6 +58,17 @@ public class SuHomeController {
     public MyStatus modifyVip(HttpServletRequest req, Vip vip){
         int res = vipManagerService.update(vip);
         return new MyStatus(res);
+    }
+
+    @RequestMapping(value = "/charge")
+    public String charge(HttpServletRequest req, Vip vip){
+        return "charge";
+    }
+    @ResponseBody
+    @RequestMapping(value = "/api/charge")
+    public ChargeMessage  chargeApi(HttpServletRequest req, String vid, Integer amount){
+        ChargeMessage  chargeMessage = vipManagerService.charge(vid, amount);
+        return chargeMessage;
     }
 
 
