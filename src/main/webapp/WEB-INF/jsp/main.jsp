@@ -51,6 +51,11 @@
                 <span>购物车</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
+            <a id="shoppingRecord" href="#" class="" onclick="jump(this,'shoppingRecord');" id="shoppingRecord">
+                <em class="zicon zicon-cart"></em>
+                <span>消费记录</span>
+                <em class="zicon zicon-arrowright"></em>
+            </a>
             <a id="wallethis" href="#" class="" onclick="jump(this,'wallethis');" id="wallethis">
                 <em class="zicon zicon-bonus"></em>
                 <span>奖金纪录</span>

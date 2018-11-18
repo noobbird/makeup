@@ -78,8 +78,7 @@
                     <tr>
                     <td class="c" hidden="true">${ pocketRecord.id}</td>
                     <td class="c" width="150">${ pocketRecord.stringTime}</td>
-                    <td class="c">${ pocketRecord.typeName}</td>
-                    <td class="c">${ pocketRecord.pointOrCashName}</td>`;
+                    <td class="c">${ pocketRecord.typeName}</td>`;
 
                 if (pocketStatus==SHOPPINGMETHOD){
                     str +=`
