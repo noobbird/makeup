@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="/css/common.css" />
-    <link rel="stylesheet" type="text/css" href="/css/dwui.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
     <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script src="/js/script.js?20180831"></script>
+    <script src="../js/script.js?20180831"></script>
 </head>
 <body>
 
@@ -70,7 +70,7 @@
     function searchAllPocketRecord() {
         let data={};
         data.pointOrCash=POINTORCASH;
-        $.get('/pocketRecord/findPocketRecordByWhere',data,function (results) {
+        $.get('../pocketRecord/findPocketRecordByWhere',data,function (results) {
             var str="";
             for(pocketRecord of results){
                 var pocketStatus=pocketRecord.type;

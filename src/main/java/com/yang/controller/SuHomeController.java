@@ -122,7 +122,7 @@ public class SuHomeController {
     public String addPorducts(HttpServletRequest request, Product product, MultipartFile pictureFile) throws Exception {
         String name = UUID.randomUUID().toString().replaceAll("-", "");
         String ext = FilenameUtils.getExtension(pictureFile.getOriginalFilename());
-        String url = request.getSession().getServletContext().getRealPath("").toString() + "upload\\";
+        String url = request.getSession().getServletContext().getRealPath("").toString() + "\\upload\\";
         System.out.println(url);
         pictureFile.transferTo(new File(url + "/" + name + "." + ext));
         product.setPicUrl("/upload/" + name + "." + ext);

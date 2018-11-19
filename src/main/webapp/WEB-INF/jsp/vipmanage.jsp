@@ -10,12 +10,12 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="/css/dwui.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css?" />
-    <script src="/js/jquery.min.js?20180831"></script>
-    <script src="/js/script.js?20180831"></script>
-    <script src="/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?" />
+    <script src="../js/jquery.min.js?20180831"></script>
+    <script src="../js/script.js?20180831"></script>
+    <script src="../js/bootstrap.js"></script>
 </head>
 <body>
 <div class="daui_col">
@@ -154,7 +154,7 @@
     <div class="current"></div>
     <div  class="indiv"></div>
 </div>
-<%--<script src="/js/vipmanage.js"></script>--%>
+<%--<script src="../js/vipmanage.js"></script>--%>
     </div>
 </div>
 <script>
@@ -298,7 +298,7 @@
         //
         // }
 
-        $.ajax("/api/getvips",{
+        $.ajax("../api/getvips",{
             method:"GET",
             dataType:"json",
             success:function (vips) {

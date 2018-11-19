@@ -9,10 +9,10 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css?" />
-    <script src="/js/jquery.min.js?20180831"></script>
-    <script src="/js/script.js?20180831"></script>
-    <script src="/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?" />
+    <script src="../js/jquery.min.js?20180831"></script>
+    <script src="../js/script.js?20180831"></script>
+    <script src="../js/bootstrap.js"></script>
 </head>
 <body>
 <div class="daui_col"><div class="top">
@@ -119,7 +119,7 @@
         });
         $('#input-recvid').keyup(function () {
             if($('#input-recvid').val().length == 8){
-                $.ajax("/api/charge",{
+                $.ajax("../api/charge",{
                     type:'POST',
                     dataType: 'json',
                     data:{

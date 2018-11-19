@@ -655,6 +655,7 @@ textarea.daui_input{
     background-color:#03a9f4;
     color:#FFF;
 }
+
 .daui_btn.blue:hover{
     background-color:#0082c1;
 }
@@ -1092,4 +1093,9 @@ textarea.daui_input{
     background: #1eb9ff;
     border: 0;
     font-size: 14px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
