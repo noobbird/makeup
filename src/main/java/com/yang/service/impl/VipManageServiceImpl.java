@@ -1,5 +1,6 @@
 package com.yang.service.impl;
 
+import com.yang.dao.AwardRecordMapper;
 import com.yang.dao.PocketRecordMapper;
 import com.yang.dao.VidGeneratorMapper;
 import com.yang.dao.VipMapper;
@@ -21,11 +22,14 @@ public class VipManageServiceImpl implements VipManagerService {
     VidGeneratorMapper vidGeneratorMapper;
     @Autowired
     PocketRecordMapper pocketRecordMapper;
+    @Autowired
+    AwardRecordMapper  awardRecordMapper;
 
     @Override
     public Vip insert(Vip vip) {
         float initialBanlance = 0;
         float initialPoints = 0;
+        int awardAmount = 3800;
         String prefix = "MY";
         VidGenerator vidGenerator = vidGeneratorMapper.selectByPrimaryKey(0);
         int suffix = vidGenerator.getSuffixNumber();
@@ -34,6 +38,17 @@ public class VipManageServiceImpl implements VipManagerService {
         vip.setRegisteTime(new Date());
         vip.setBanlance(initialBanlance);
         vip.setPoints(initialPoints);
+
+        //为推荐人增加钱以及记录
+        AwardRecord awardRecord = new AwardRecord();
+        awardRecord.setAwardAmount(awardAmount);
+        awardRecord.setAwardTime(new Date());
+        awardRecord.setAwardType("recomend");
+        awardRecord.setVid(vip.getRecommendVid());
+        awardRecord.setRelatedVip(vip.getVid());
+        awardRecordMapper.insert(awardRecord);
+        charge(vip.getRecommendVid(), awardAmount);
+        //更新主键生成器
         vidGenerator.setSuffixNumber(vidGenerator.getSuffixNumber() + 1);
         vidGeneratorMapper.updateByPrimaryKey(vidGenerator);
         int res = vipMapper.insert(vip);

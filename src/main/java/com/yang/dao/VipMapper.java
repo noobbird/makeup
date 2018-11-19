@@ -97,4 +97,6 @@ public interface VipMapper {
      * @mbggenerated Thu Nov 01 08:54:57 CST 2018
      */
     int updateByPrimaryKey(Vip record);
+
+    int getVipsByPage(int page,int pageSize);
 }

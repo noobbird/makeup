@@ -41,9 +41,9 @@
                 <span>商品管理</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="cart" href="#" class="" onclick="jump('cart');">
+            <a id="recommendhis" href="#" class="" onclick="jump('recommendhis');">
                 <em class="zicon zicon-cart"></em>
-                <span>业绩管理</span>
+                <span>推荐记录</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
             <a id="wallethis" href="#" class="" onclick="jump('wallethis');">
