@@ -43,7 +43,7 @@
                     <button id="lastPage">上一页</button>
                     <span id="currentPage"></span>/
                     <span id="totalPage"></span>
-                    <select>
+                    <select id="pageSize_select">
                         <option value="10" selected="selected">10</option>
                         <option value="15">15</option>
                     </select>
@@ -56,27 +56,82 @@
 
 </body>
 <script>
+
+    var TOTAL_PAGE;
     /**
      * 进入网页后自动加载
      */
     $(() =>{
-        searchShoppingRecord()
         setPages()
+        $('#firstPage').click(() =>{
+            let data = {};
+            data.firstIndex=0;
+            data.pageSize=$('#pageSize_select').val();
+            searchShoppingRecord(data);
+        });
+        $('#finalPage').click(() =>{
+            $('#currentPage').text(TOTAL_PAGE);
+            var size=parseInt($('#pageSize_select').val());
+            let data = {};
+            data.firstIndex=(TOTAL_PAGE-1)*size;
+            data.pageSize=size;
+            searchShoppingRecord(data);
+        });
+        $('#lastPage').click(() =>{
+            let data = {};
+            var current=parseInt($('#currentPage').text());
+            var size=parseInt($('#pageSize_select').val());
+            if (current>1){
+                $('#currentPage').text(current-1)
+                data.firstIndex=(current-2)*size;
+                data.pageSize=size;
+                searchShoppingRecord(data);
+            }
+        });
+        $('#nextPage').click(() =>{
+            let data = {};
+            var current=parseInt($('#currentPage').text());
+            var size=parseInt($('#pageSize_select').val());
+            if (current<TOTAL_PAGE){
+                $('#currentPage').text(current+1)
+                data.firstIndex=current*size;
+                data.pageSize=size;
+                searchShoppingRecord(data);
+            }
+        });
+        $('#pageSize_select').click(() =>{
+            var current=parseInt($('#currentPage').text());
+            var size=parseInt($('#pageSize_select').val());
+            var row = parseInt($('#totalRow').text());
+            if (row%size>0){
+                TOTAL_PAGE=parseInt(row/size+1)
+            } else{
+                TOTAL_PAGE=parseInt(row/size);
+            }
+            $('#totalPage').text(TOTAL_PAGE);
+            let data = {};
+            data.firstIndex=(current-1)*size;
+            data.pageSize=size;
+            searchShoppingRecord(data);
+        });
     });
     
     function setPages() {
-        $.get('/shoppingRecord/getTotalRowCountByWhere','',(results) =>{
+        $.post('/shoppingRecord/getTotalRowCountByWhere','',(results) =>{
             $('#totalRow').text(results.totalRow);
             $('#currentPage').text(results.currentPage);
             $('#totalPage').text(results.totalPage);
+            TOTAL_PAGE=results.totalPage;
 
         },'json');
-    }
-    function searchShoppingRecord() {
         let data = {};
-        data.firstIndex='1';
+        data.firstIndex=0;
         data.pageSize="10";
-        $.get('/shoppingRecord/selectShoppingRecordByWhere',data,function (results) {
+        searchShoppingRecord(data);
+    }
+    function searchShoppingRecord(data) {
+
+        $.post('/shoppingRecord/selectShoppingRecordByWhere',data,function (results) {
             var str="";
             for(shoppingRecord of results){
                 str +=`
@@ -85,7 +140,7 @@
 
                     <td class="c" hidden="true">${ shoppingRecord.productId}</td>
                     <td class="c" width="150">${ shoppingRecord.oId}</td>
-                    <td class="c">${ shoppingRecord.addTime}</td>
+                    <td class="c">${ shoppingRecord.stringAddTime}</td>
                     <td class="c">${ shoppingRecord.productCount}</td>
                     <td class="c">${ shoppingRecord.productPrice}</td>
                     <td class="c">${ shoppingRecord.totalPrice}</td>

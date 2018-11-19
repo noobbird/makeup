@@ -197,7 +197,7 @@
         function decrease(x){
             var $eleInputNumber= $(x).parent().children('input');
             var num =parseInt($eleInputNumber.val());
-            if (num>0){
+            if (num>1){
                 num=parseInt(num-1);
                 $eleInputNumber.val(num);
                 let data={};
