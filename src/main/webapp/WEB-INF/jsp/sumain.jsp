@@ -7,20 +7,20 @@
 
     <title>DS共享美业管理后台</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="/css/dwui.css?20180831" />
-    <script src="/js/jquery.min.js?20180831"></script>
-    <script src="/js/script.js?20180831"></script>
-    <script src="/js/datetimepicker/jquery.datetimepicker.full.js?20180831"></script>
-    <script src="/js/webuploader/webuploader.js?20180831"></script>
-    <script src="/js/webuploader/dauiuploader.js?20180831"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
+    <script src="../js/jquery.min.js?20180831"></script>
+    <script src="../js/script.js?20180831"></script>
+    <script src="../js/datetimepicker/jquery.datetimepicker.full.js?20180831"></script>
+    <script src="../js/webuploader/webuploader.js?20180831"></script>
+    <script src="../js/webuploader/dauiuploader.js?20180831"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <div class="dwui_body">
     <div class="dwui_navs">
         <div class="logo">
-            <img src="/static/self/logo.png?20180831" />
+            <img src="../static/self/logo.png?20180831" />
         </div>
         <div class="dwui_menu zicon zicon-menu" onClick="$('.dwui_navs').hide();$('.dwui_menu.menu2').show();">
 
@@ -128,7 +128,7 @@
     };
     function jump(path){
         // alert(path);
-        $(".dwui_main").load("/" + path,function(){ $(".dwui_main").fadeIn(100);})};
+        $(".dwui_main").load("../" + path,function(){ $(".dwui_main").fadeIn(100);})};
 
 </script>
 

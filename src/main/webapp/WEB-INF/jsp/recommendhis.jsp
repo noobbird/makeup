@@ -9,12 +9,12 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="/css/dwui.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css?" />
-    <script src="/js/jquery.min.js?20180831"></script>
-    <script src="/js/script.js?20180831"></script>
-    <script src="/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?" />
+    <script src="../js/jquery.min.js?20180831"></script>
+    <script src="../js/script.js?20180831"></script>
+    <script src="../js/bootstrap.js"></script>
 </head>
 <body>
 <div class="daui_col">
@@ -105,7 +105,7 @@
 
     }
     $(function(){
-        $.ajax("/api/recommndhis",{
+        $.ajax("../api/recommndhis",{
             method:"GET",
             dataType:"json",
             success:function (rcmdData) {
