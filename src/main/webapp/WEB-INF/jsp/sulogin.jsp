@@ -8,18 +8,18 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=edge">
     <meta name="renderer" content="webkit">
     <title>DS共享美业</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/dwui.css" />
-    <link rel="stylesheet" type="text/css" href="../icon/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="../zicon/iconfont.css">
-    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/dwui.css" />
+    <link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="zicon/iconfont.css">
+    <script src="js/jquery.min.js"></script>
 
 </head>
 <body class="dwui_login">
 <div class="wrap">
     <div class="top">
         <div class="img">
-            <img src="../tupian/login.jpg" />
+            <img src="tupian/login.jpg" />
         </div>
         <div class="txt">
             <span>DS共享美业后台管理</span>
@@ -27,14 +27,14 @@
     </div>
 
     <div class="form">
-        <form id="mForm" action="../login" method="post">
+        <form id="mForm" action="login" method="post">
             <div class="line">
                 <p class="zicon zicon-user"></p>
-                <input type="text" name="username" placeholder="admin" />
+                <input type="text" name="username" value="admin" />
             </div>
             <div class="line">
                 <p class="zicon zicon-lock"></p>
-                <input type="text" onFocus="this.type='password'" name="userpswd" placeholder="admin123"/>
+                <input type="text" onFocus="this.type='password'" name="userpswd" value="admin123"/>
             </div>
             <div class="submit">
                 <a href="javascript:Login()">登 录</a>
@@ -58,7 +58,7 @@
     {
         // $('.daui_loading').show();
         $.ajax({
-            url:'/sulogin',
+            url:'sulogin',
             type:'POST',
             dataType:"json",
             data:$("#mForm").serialize(),
@@ -66,7 +66,7 @@
                 // $('.daui_loading').hide();
                 if(data.code == 0)
                 {
-                    window.location.href="../sumain";
+                    window.location.href="sumain";
                 }
                 else
                 {

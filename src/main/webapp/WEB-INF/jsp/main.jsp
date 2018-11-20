@@ -9,10 +9,10 @@
     <title>DS共享美业</title>
 
 
-    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script src="../js/script.js?20180831"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="css/dwui.css?20180831" />
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js?20180831"></script>
 </head>
 <body>
 <div class="dwui_body">
@@ -20,13 +20,13 @@
         <div class="logo">
 
 
-            <img src="../images/cart.jpg" />
+            <img src="images/cart.jpg" />
         </div>
         <div class="dwui_menu zicon zicon-menu" onClick="$('.dwui_navs').hide();$('.dwui_menu.menu2').show();">
 
         </div>
         <div class="navs">
-            <a href="../main" class="" name="welcome" onclick="jump(this,'welcome')" id="welcome">
+            <a href="main" class="" name="welcome" onclick="jump(this,'welcome')" id="welcome">
                 <em class="zicon zicon-home"></em>
                 <span>首页</span>
                 <em class="zicon zicon-arrowright"></em>
@@ -125,7 +125,7 @@
         $('#'+linkName).css("background","");
         $('#'+path).css("background","#0d97ff");
         linkName=path;
-        $(".dwui_main").load("../home/"+path,function(){ $(".dwui_main").fadeIn(100);})};
+        $(".dwui_main").load("home/"+path,function(){ $(".dwui_main").fadeIn(100);})};
 
 </script>
 
