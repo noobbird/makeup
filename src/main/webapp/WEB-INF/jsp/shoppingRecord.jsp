@@ -141,11 +141,11 @@
                 var time=formatDate(shoppingRecord.addTime);
                 str +=`
                     <tr>
-                    <td class="c" hidden="true">${ shoppingRecord.oId}</td>
+                    <td class="c" hidden="true">\${ shoppingRecord.oId}</td>
 
-                    <td class="c" hidden="true">${ shoppingRecord.productId}</td>
-                    <td class="c" width="150">${ shoppingRecord.oId}</td>
-                    <td class="c" width="150">${ shoppingRecord.productName}</td>
+                    <td class="c" hidden="true">\${ shoppingRecord.productId}</td>
+                    <td class="c" width="150">\${ shoppingRecord.oId}</td>
+                    <td class="c" width="150">\${ shoppingRecord.productName}</td>
                     <td class="c">${ time}</td>
                     <td class="c">${ shoppingRecord.productCount}</td>
                     <td class="c">${ shoppingRecord.productPrice}</td>
