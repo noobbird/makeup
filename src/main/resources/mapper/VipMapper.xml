@@ -102,7 +102,8 @@
   </sql>
 <update id="updateVipByVid" parameterType="Vip" >
   UPDATE VIP SET
-    <if test="banlance!=null">BANLANCE=#{banlance,jdbcType=DECIMAL}</if>
+    <if test="banlance!=null">BANLANCE=#{banlance,jdbcType=DECIMAL},</if>
+  <if test="points!=null">POINTS=#{points,jdbcType=DECIMAL},</if>
   WHERE VID=#{vid,jdbcType=VARCHAR}
 </update>
 

@@ -9,12 +9,12 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="../css/common.css" />
-    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script src="../js/script.js?20180831"></script>
-    <script src="../js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dwui.css?20180831" />
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js?20180831"></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
     <div class="daui_col" id="personalPocketRecord">
@@ -121,7 +121,7 @@
     });
     
     function setPages() {
-        $.post('../shoppingRecord/getTotalRowCountByWhere','',(results) =>{
+        $.post('shoppingRecord/getTotalRowCountByWhere','',(results) =>{
             $('#totalRow').text(results.totalRow);
             $('#currentPage').text(results.currentPage);
             $('#totalPage').text(results.totalPage);
@@ -135,9 +135,10 @@
     }
     function searchShoppingRecord(data) {
 
-        $.post('../shoppingRecord/selectShoppingRecordByWhere',data,function (results) {
+        $.post('shoppingRecord/selectShoppingRecordByWhere',data,function (results) {
             var str="";
             for(shoppingRecord of results){
+                var time=formatDate(shoppingRecord.addTime);
                 str +=`
                     <tr>
                     <td class="c" hidden="true">${ shoppingRecord.oId}</td>
@@ -145,7 +146,7 @@
                     <td class="c" hidden="true">${ shoppingRecord.productId}</td>
                     <td class="c" width="150">${ shoppingRecord.oId}</td>
                     <td class="c" width="150">${ shoppingRecord.productName}</td>
-                    <td class="c">${ formatDate(shoppingRecord.addTime)}</td>
+                    <td class="c">${ time}</td>
                     <td class="c">${ shoppingRecord.productCount}</td>
                     <td class="c">${ shoppingRecord.productPrice}</td>
                     <td class="c">${ shoppingRecord.totalPrice}</td>

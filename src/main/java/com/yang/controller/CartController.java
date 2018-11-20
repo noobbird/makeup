@@ -135,7 +135,7 @@ public class CartController {
                     //修改用户余额
                     Vip newVip = new Vip();
                     newVip.setoId(vip.getoId());
-                    newVip.setBanlance(vip.getPoints() - amount);
+                    newVip.setPoints(vip.getPoints() - amount);
                     vipService.updateVipByVid(newVip);
                     returnFlag = Constant.SUCCESS;
                 }

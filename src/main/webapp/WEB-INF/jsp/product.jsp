@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="../css/common.css" />
-    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script src="../js/script.js?20180831"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dwui.css?20180831" />
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js?20180831"></script>
 </head>
 <body>
 <div class="novBar">
@@ -107,7 +107,7 @@
         });
 
         function getLoginVip() {
-            $.get('../vip/getLoginVip','',(results) =>{
+            $.get('vip/getLoginVip','',(results) =>{
                 $("#banlance_span").text(results.banlance);
                 $('#point_span').text(results.points);
             },'json');
@@ -139,7 +139,7 @@
          * 查询所有商品
          * */
         function searchAllProduct(data) {
-            $.get('../product/findProduceByWhere',data,function (results) {
+            $.get('product/findProduceByWhere',data,function (results) {
                 var str="";
                 for(productVO of results){
                     str +=`
@@ -161,7 +161,7 @@
                                 <i class="" onclick="increase(this)" >+</i>
                             </div>
                         </td>
-                        <td class="c"> <img src="../images/cart.jpg" onclick="addtProductToCart(this)"></td>
+                        <td class="c"> <img src="images/cart.jpg" onclick="addtProductToCart(this)"></td>
                     </tr>
                     `;
                 }
@@ -176,7 +176,7 @@
             data.productId= $(x).parent().parent().children('td[name="productId"]').text();
             data.productCount=$(x).parent().parent().find('input[name="productCount"]').val();
             console.log(data)
-            $.post('../cart/addProductToCart',data,(results) =>{
+            $.post('cart/addProductToCart',data,(results) =>{
                 if (results=='1'){
                     alert("添加成功")
                 }

@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="../css/common.css" />
-    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script src="../js/script.js?20180831"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dwui.css?20180831" />
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js?20180831"></script>
 </head>
 <body>
 <div class="novBar">
@@ -102,7 +102,7 @@
         });
 
         function getLoginVip() {
-            $.get('../vip/getLoginVip','',(results) =>{
+            $.get('vip/getLoginVip','',(results) =>{
                 $("#banlance_span").text(results.banlance);
                 $('#point_span').text(results.points);
             },'json');
@@ -166,7 +166,7 @@
                 let data={};
                 data.oId=cartId;
                 data.shoppingMethod="1"
-                $.post('../cart/purchase',data,(results) =>{
+                $.post('cart/purchase',data,(results) =>{
                     // console.log(results)
                     if (results=='1'){
                         alert("购买成功")
@@ -218,7 +218,7 @@
                 let data={};
                 data.oId=cartId;
                 data.shoppingMethod="2"
-                $.post('../cart/purchase',data,(results) =>{
+                $.post('cart/purchase',data,(results) =>{
                     // console.log(results)
                     if (results=='1'){
                         alert("购买成功")
@@ -233,7 +233,7 @@
 
         }
         function searchAllCart(data) {
-            $.get('../cart/findCartByWhere',data,function (results) {
+            $.get('cart/findCartByWhere',data,function (results) {
                 var str="";
                 for(cart of results){
                     str +=`
@@ -263,7 +263,7 @@
         }
 
         function searchAllPointCart(data) {
-            $.get('../cart/findCartByWhere',data,function (results) {
+            $.get('cart/findCartByWhere',data,function (results) {
                 var str="";
                 for(cart of results){
                     str +=`
@@ -324,7 +324,7 @@
         }
 
         function updateCart(data) {
-            $.get('../cart/updateCartCount',data,(results) =>{
+            $.get('cart/updateCartCount',data,(results) =>{
                 console.log(results);
             },'text');
         }
@@ -344,7 +344,7 @@
                 // console.log(cartId);
                 let data={};
                 data.oId=cartId;
-                $.post('../cart/deleteCart',data,(results) =>{
+                $.post('cart/deleteCart',data,(results) =>{
                     if (results=='0') {
                         alert("发生异常")
                     }
@@ -358,7 +358,7 @@
             $('#'+linkName).css("background","");
             $('#shoppingRecord').css("background","#0d97ff");
             linkName="shoppingRecord";
-            $(".dwui_main").load("../home/shoppingRecord",function(){ $(".dwui_main").fadeIn(100);})
+            $(".dwui_main").load("home/shoppingRecord",function(){ $(".dwui_main").fadeIn(100);})
         }
     </script>
 </body>
