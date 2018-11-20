@@ -24,6 +24,8 @@
     -->
     <result column="VID" property="vid" jdbcType="VARCHAR" />
     <result column="V_NAME" property="vName" jdbcType="VARCHAR" />
+    <result column="V_CLASS" property="Vclass" jdbcType="VARCHAR" />
+    <result column="RELATED_CLASS" property="Relatedclass" jdbcType="VARCHAR" />
     <result column="RELATED_VID" property="relatedVid" jdbcType="VARCHAR" />
     <result column="RELATED_VNAME" property="relatedVname" jdbcType="VARCHAR" />
     <result column="AWARD_TIME" property="recommendTime" jdbcType="TIMESTAMP" />
@@ -104,8 +106,8 @@
     -->
     O_ID, VID, AWARD_TYPE, AWARD_AMOUNT, SERVICE_FEE, RELATED_VIP, AWARD_TIME
   </sql>
-  <select id="selectRcmdHis" resultMap="recmdHis">
-    select a.VID, v1.V_NAME as V_NAME, v2.VID as RELATED_VID,v2.V_NAME as  RELATED_VNAME, a.AWARD_TIME
+  <select id="selectRcmdHis" resultMap="recmdHis" >
+    select a.VID, v1.V_NAME as V_NAME,v1.V_CLASS,v2.VID as RELATED_VID,v2.V_NAME as  RELATED_VNAME,v2.V_CLASS as RELATED_CLASS, a.AWARD_TIME
       from AWARD_RECORD a
       LEFT JOIN VIP v1 on v1.VID=a.VID
       left join VIP v2 on v2.vid = a.RELATED_VIP

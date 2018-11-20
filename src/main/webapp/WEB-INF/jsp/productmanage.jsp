@@ -9,12 +9,12 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?" />
-    <script src="../js/jquery.min.js?20180831"></script>
-    <script src="../js/script.js?20180831"></script>
-    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="css/dwui.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css?" />
+    <script src="js/jquery.min.js?20180831"></script>
+    <script src="js/script.js?20180831"></script>
+    <script src="js/bootstrap.js"></script>
     <style>
         .product_pic{
             width: auto;
@@ -105,7 +105,7 @@
                 $("#fail").hide();
                 var partr = $(this).closest('tr').find('td');
                 var vid = partr.eq(0).text();
-                $.ajax("../api/removeprodcut",{
+                $.ajax("api/removeprodcut",{
                     method: "POST",
                     dataType: "json",
                     data:{id:vid},
@@ -135,7 +135,7 @@
 
 
         }
-        $.ajax("../api/getproducts",{
+        $.ajax("api/getproducts",{
             method:"POST",
             dataType:"json",
             success:function (products) {

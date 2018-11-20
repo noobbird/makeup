@@ -110,13 +110,16 @@
 
         <div class="wrap">
 
-            <table class="daui_table">
-                <tbody><tr>
+            <table class="daui_table recmd">
+                <thead>
+                <tr>
                     <th width="120">ID</th>
                     <th>姓名</th>
                     <th>级别</th>
                     <th>日期</th>
                 </tr>
+                </thead>
+                <tbody>
                 </tbody></table>
 
             <div class="daui_pages">
@@ -126,6 +129,58 @@
             </div>
         </div>
     </div>
+    <div class="page-index">
+        <div class="all"></div>
+        <div class="current"></div>
+        <div  class="indiv"></div>
+    </div>
+<script>
+    $(function(){
+        var alldata ='';
+        var pagesize = 6;
+        function putdata(page, json) {
+            $('tbody').empty();
+            var start = (page - 1) * pagesize;
+            var end = start + pagesize >= json.length ? json.length : start + pagesize;
+            var index = 1;
+            for (var i = start; i < end; i++) {
+                var tr = '<tr>'
+                var product = json[i];
+                var tr = '<tr>';
+                tr += '<td>' + product.vid +'</td>';
+                tr += '<td>' + product.relatedVip + '</td>';
+                tr += '<td>' + product.awardTime + '</td>';
 
+                tr += '</tr>';
+                $('.recmd').append(tr);
+                index += 1;
+            }
+            $('.current').text("当前第" + page + "页")
+        }
+        function pageindex(viplen){
+            var count = Math.ceil(viplen/pagesize);
+            $('.all').text("共"+count+"页");
+            for(var i = 1; i <= count; i ++){
+                $('.indiv').append("<a href='#' class='page' page="+i+
+                    ">第"+i+"页&nbsp;</a>")
+            }
+            $('.page').click(function () {
+                var page = $(this).attr('page');
+                putdata(page, alldata);
+            })
+
+
+        }
+        $.ajax("home/recmdhis",{
+            method:"GET",
+            dataType:"json",
+            success:function(data){
+                alldata = data;
+                pageindex(data.length);
+                putdata(1, data);
+            }
+        })
+    })
+</script>
 </body>
 </html>

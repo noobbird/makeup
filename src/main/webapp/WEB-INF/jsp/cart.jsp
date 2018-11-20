@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css?20180831" />
-    <link rel="stylesheet" type="text/css" href="../css/common.css" />
-    <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script src="../js/script.js?20180831"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css?20180831" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dwui.css?20180831" />
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js?20180831"></script>
 </head>
 <body>
 <div class="novBar">
@@ -105,7 +105,7 @@
         });
 
         function getLoginVip() {
-            $.get('../vip/getLoginVip','',(results) =>{
+            $.get('vip/getLoginVip','',(results) =>{
                 $("#banlance_span").text(results.banlance);
                 $('#point_span').text(results.points);
             },'json');
@@ -146,7 +146,7 @@
                 let data={};
                 data.oId=cartId;
                 data.shoppingMethod="1"
-                $.post('../cart/purchase',data,(results) =>{
+                $.post('cart/purchase',data,(results) =>{
                     // console.log(results)
                     if (results=='1'){
                         alert("购买成功")
@@ -161,7 +161,7 @@
 
         }
         function searchAllCart() {
-            $.get('../cart/findCartByWhere','',function (results) {
+            $.get('cart/findCartByWhere','',function (results) {
                 var str="";
                 for(cart of results){
                     str +=`
@@ -171,7 +171,7 @@
                         <td hidden="true"> <input type="hidden" value="${ cart.vipId}" name="checkbox"> </td>
                         <td>
                             <a href="javascript:Daui_iframe('https://www.gxmyvips.com/cart/view/32');" style="vertical-align: top">
-                                <img src="../images/1.jpg">
+                                <img src="images/1.jpg">
                                 &nbsp;${cart.productName}</a>
                         </td>
                         <td class="c">${ cart.cashPrice}</td>
@@ -224,7 +224,7 @@
         }
 
         function updateCart(data) {
-            $.get('../cart/updateCartCount',data,(results) =>{
+            $.get('cart/updateCartCount',data,(results) =>{
                 console.log(results);
             },'text');
         }

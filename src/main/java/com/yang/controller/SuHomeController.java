@@ -117,9 +117,9 @@ public class SuHomeController {
         int res = productManageService.removeProduct(id);
         return new MyStatus(res);
     }
-
+    @ResponseBody
     @RequestMapping(value = "/api/addproducts")
-    public String addPorducts(HttpServletRequest request, Product product, MultipartFile pictureFile) throws Exception {
+    public MyStatus addPorducts(HttpServletRequest request, Product product, MultipartFile pictureFile) throws Exception {
         String name = UUID.randomUUID().toString().replaceAll("-", "");
         String ext = FilenameUtils.getExtension(pictureFile.getOriginalFilename());
         String url = request.getSession().getServletContext().getRealPath("").toString() + "\\upload\\";
@@ -128,8 +128,8 @@ public class SuHomeController {
         product.setPicUrl("/upload/" + name + "." + ext);
         product.setSaleCount(0);
         product.setProductHot(0);
-        productManageService.addProduct(product);
-        return "redirect:/sumain";
+        int res = productManageService.addProduct(product);
+        return new MyStatus(res);
     }
 
     @RequestMapping(value = "recommendhis")
