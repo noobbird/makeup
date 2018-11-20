@@ -178,7 +178,7 @@
     }
     $(function(){
         var allvip ='';
-        var pagesize = 14;
+        var pagesize = 8;
         function putdata(page, json) {
             $('tbody').empty();
             var start = (page - 1) * pagesize;
@@ -234,12 +234,12 @@
                 var vid = $("input[name='vid']").val();
                 var vname = $("input[name='vName']").val();
                 var phone = $("input[name='phone']").val();
-                var vclass = $("input[name='vClass']").val();
+                var vclass = $("input[name='vClass']").val();0
                 var recommendVid = $("input[name='recommendVid']").val();
                 var recommendPerson = $("input[name='recommendPerson']").val();
                 var address = $("input[name='address']").val();
                 var bankName = $("select").find("option:selected").text();
-                alert(bankName);
+                // alert(bankName);
                 var bankNumber = $("input[name='bankNumber']").val();
 
 

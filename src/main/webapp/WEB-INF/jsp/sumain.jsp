@@ -75,10 +75,7 @@
             <div class="title">
                 <p>DS共享美业会员服务中心</p>
             </div>
-            <div class="btns">
-                <a href="https://www.gxmyvips.com/info/pswd" class="zicon zicon-lock"></a>
-                <a href="https://www.gxmyvips.com/login/out" class="zicon zicon-logout"></a>
-            </div>
+
         </div>
 
         <div class="dwui_main">

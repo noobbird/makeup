@@ -10,35 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eb58ce3-1e44-4906-8310-f3d54ec69df8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/domain/VipExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/domain/VipExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/service/VipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/service/VipService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AwardRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AwardRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addproduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addproduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productmanage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productmanage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendhis.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendhis.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/shoppingRecord.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/shoppingRecord.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sulogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sulogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/team.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/team.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wallet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yang/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yang/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yang/dao/CartMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yang/dao/CartMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/implTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/implTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/MyBatisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/MyBatisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/TestCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/TestCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/implTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/implTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yang/controller/HomeController.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,9 +108,9 @@
         <counts>
           <entry key="1" value="1" />
           <entry key="css" value="2" />
-          <entry key="java" value="10603" />
+          <entry key="java" value="10753" />
           <entry key="js" value="1112" />
-          <entry key="jsp" value="9050" />
+          <entry key="jsp" value="9068" />
           <entry key="properties" value="1" />
           <entry key="txt" value="332" />
           <entry key="xml" value="523" />
@@ -134,8 +118,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10603" />
-          <entry key="JSP" value="9050" />
+          <entry key="JAVA" value="10753" />
+          <entry key="JSP" value="9068" />
           <entry key="JavaScript" value="1112" />
           <entry key="PLAIN_TEXT" value="335" />
           <entry key="Properties" value="1" />
@@ -149,9 +133,9 @@
           <entry key="class" value="16" />
           <entry key="css" value="5" />
           <entry key="html" value="2" />
-          <entry key="java" value="172" />
+          <entry key="java" value="176" />
           <entry key="js" value="8" />
-          <entry key="jsp" value="96" />
+          <entry key="jsp" value="106" />
           <entry key="png" value="2" />
           <entry key="properties" value="3" />
           <entry key="rnc" value="1" />
@@ -164,8 +148,8 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="172" />
-          <entry key="JSP" value="96" />
+          <entry key="JAVA" value="176" />
+          <entry key="JSP" value="106" />
           <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="3" />
@@ -186,8 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="104" column="61" lean-forward="true" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
+            <state relative-caret-position="339">
+              <caret line="109" column="38" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -195,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/team.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="147" column="34" lean-forward="true" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
+            <state relative-caret-position="253">
+              <caret line="125" column="10" lean-forward="true" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
               <folding>
                 <element signature="e#33#39#0" expanded="true" />
               </folding>
@@ -205,72 +189,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AwardRecordMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/RecommendHis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+            <state relative-caret-position="-627">
+              <caret line="43" column="73" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sulogin.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+            <state relative-caret-position="-549">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/implTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="117" column="65" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
+            <state relative-caret-position="340">
+              <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/dao/AwardRecordMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+            <state relative-caret-position="2208">
+              <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipManageServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2640">
-              <caret line="120" column="50" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/RecommendHistoryServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="207">
+              <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -278,11 +236,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productmanage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
+            <state relative-caret-position="87">
               <caret line="72" column="30" selection-start-line="69" selection-end-line="73" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="236" column="62" selection-start-line="236" selection-start-column="62" selection-end-line="236" selection-end-column="62" />
               <folding>
                 <element signature="e#33#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendhis.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="19" selection-start-line="19" selection-end-line="26" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -325,7 +301,10 @@
       <find>&quot;..</find>
       <find>'../</find>
       <find>&quot;../</find>
+      <find>andrecommen</find>
       <find>byprimary</find>
+      <find>andrecommendvide</find>
+      <find>title</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -349,8 +328,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yang/service/LoginService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/service/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/domain/Admin.java" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
@@ -385,21 +362,23 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addproduct.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/SuHomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addvip.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yang/service/VipService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productmanage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/team.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sulogin.jsp" />
-        <option value="$PROJECT_DIR$/src/test/java/implTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/dao/AwardRecordMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/service/impl/RecommendHistoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/AwardRecordMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yang/domain/RecommendHis.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/AwardRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yang/service/VipService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yang/domain/VipExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/implTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/team.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp" />
       </list>
     </option>
   </component>
@@ -647,7 +626,7 @@
     <property name="SearchEverywhereHistoryKey" value="enter&#9;PSI&#9;JAVA://com.sun.javafx.scene.EnteredExitedHandler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542703135986" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542710451049" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -685,7 +664,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.implTest.getRecmd">
+  <component name="RunManager" selected="Tomcat Server.Jerry">
     <configuration name="implTest.getAllVip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.lzp" />
       <option name="PACKAGE_NAME" value="" />
@@ -848,9 +827,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.implTest.getAllVip" />
         <item itemvalue="JUnit.implTest.getRecmd" />
         <item itemvalue="JUnit.implTest.getVid" />
-        <item itemvalue="JUnit.implTest.getAllVip" />
         <item itemvalue="JUnit.implTest.insertVip" />
         <item itemvalue="JUnit.implTest.suloginTest" />
       </list>
@@ -873,7 +852,7 @@
       <workItem from="1541323303789" duration="54348000" />
       <workItem from="1541984384516" duration="3150000" />
       <workItem from="1542524508145" duration="18019000" />
-      <workItem from="1542695714322" duration="6660000" />
+      <workItem from="1542695714322" duration="10223000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1540961417038</created>
@@ -987,22 +966,17 @@
       <option name="project" value="LOCAL" />
       <updated>1542594919342</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Merge branch 'master' of github.com:noobbird/makeup&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/com/yang/domain/PocketRecord.java">
+      <created>1542703259618</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1542703259618</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="implTest_getVid - 2018.11.08 at 21h 31m 46s.xml">
-      <configuration name="implTest.getVid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="implTest_getRecmd - 2018.11.18 at 20h 23m 30s.xml">
-      <configuration name="implTest.getRecmd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="implTest_getRecmd - 2018.11.18 at 20h 24m 37s.xml">
-      <configuration name="implTest.getRecmd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="implTest_getRecmd - 2018.11.18 at 20h 25m 03s.xml">
-      <configuration name="implTest.getRecmd" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="implTest_getRecmd - 2018.11.18 at 20h 26m 07s.xml">
       <configuration name="implTest.getRecmd" configurationId="JUnit" />
     </history-entry>
@@ -1021,9 +995,21 @@
     <history-entry file="implTest_getRecmd - 2018.11.20 at 16h 31m 26s.xml">
       <configuration name="implTest.getRecmd" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="implTest_getRecmd - 2018.11.20 at 16h 55m 16s.xml">
+      <configuration name="implTest.getRecmd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="implTest_getAllVip - 2018.11.20 at 17h 03m 41s.xml">
+      <configuration name="implTest.getAllVip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="implTest_getAllVip - 2018.11.20 at 17h 04m 38s.xml">
+      <configuration name="implTest.getAllVip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="implTest_getAllVip - 2018.11.20 at 17h 04m 53s.xml">
+      <configuration name="implTest.getAllVip" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221131000" />
+    <option name="totallyTimeSpent" value="224694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1038,7 +1024,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1048,15 +1034,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26560727" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.335141" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.30043384" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.335141" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" visible="true" weight="0.30043384" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3286334" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3286334" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.3253796" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.30043384" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.3253796" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -1139,24 +1125,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="995">
-          <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/jq22jqueryNicepage2868201810280045/jqueryNicepage/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/VipExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27150">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1258,16 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-926">
@@ -1275,21 +1237,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/pswd.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-53" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendhis.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="107" column="16" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="16" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/shoppingRecord.jsp">
@@ -1310,27 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2875">
           <caret line="125" column="30" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1495">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5727">
-          <caret line="249" column="48" selection-start-line="249" selection-start-column="48" selection-end-line="249" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1389,31 +1318,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/VipService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/VipController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="43" column="73" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -1424,33 +1332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/team.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="147" column="34" lean-forward="true" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
-          <folding>
-            <element signature="e#33#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productmanage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="72" column="30" selection-start-line="69" selection-end-line="73" selection-end-column="6" />
-          <folding>
-            <element signature="e#33#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="104" column="61" lean-forward="true" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipManageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2640">
@@ -1458,20 +1339,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sulogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/dao/AwardRecordMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1487,24 +1354,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/dao/AwardRecordMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/impl/VipServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="36" selection-start-line="36" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/service/VipService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/implTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="117" column="65" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
+        <state relative-caret-position="431">
+          <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sulogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AwardRecordMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="506">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/RecommendHis.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/Vip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1265">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/domain/VipExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="688" column="25" selection-start-line="688" selection-start-column="25" selection-end-line="688" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yang/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="109" column="38" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/productmanage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="72" column="30" selection-start-line="69" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/team.jsp">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <caret line="125" column="10" lean-forward="true" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
+          <folding>
+            <element signature="e#33#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627">
+          <caret line="43" column="73" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sumain.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/jifen.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendhis.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="19" selection-start-line="19" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-549">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/vipmanage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="236" column="62" selection-start-line="236" selection-start-column="62" selection-end-line="236" selection-end-column="62" />
+          <folding>
+            <element signature="e#33#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

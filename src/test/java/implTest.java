@@ -98,8 +98,12 @@ public class implTest {
 
     @Test
     public void getAllVip(){
-        List<Vip> vips = vipManagerService.getAllVip();
-        System.out.println(vips.size());
+//        List<Vip> vips = vipManagerService.getAllVip();
+//        System.out.println(vips.size());
+        VipExample vipExample = new VipExample();
+        vipExample.createCriteria().andRecommendVidEqualTo("MY103821");
+        List<Vip> vips = vipMapper.selectByExample(vipExample);
+        System.out.println(vips);
     }
     @Autowired
     VidGeneratorMapper vidGeneratorMapper;

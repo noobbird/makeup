@@ -33,10 +33,10 @@ public class VipServiceImpl implements VipService {
     }
 
     @Override
-    public List<AwardRecord> getRecmdHis(String vid) {
-        AwardRecordExample awardRecordExample = new AwardRecordExample();
-        awardRecordExample.createCriteria().andVidEqualTo(vid);
-        List<AwardRecord> awardRecords = awardRecordMapper.selectByExample(awardRecordExample);
-        return awardRecords;
+    public List<Vip> getRecmdHis(String vid) {
+        VipExample vipExample = new VipExample();
+        vipExample.createCriteria().andRecommendVidEqualTo(vid);
+        List<Vip> vips = vipMapper.selectByExample(vipExample);
+        return vips;
     }
 }

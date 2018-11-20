@@ -108,10 +108,10 @@ public class HomeController {
     }
     @ResponseBody
     @RequestMapping(value = "/recmdhis")
-    public List<AwardRecord> recmdhis(HttpServletRequest request){
+    public List<Vip> recmdhis(HttpServletRequest request){
         HttpSession session = request.getSession();
         String vid = (String)session.getAttribute("userName");
-        List<AwardRecord> awardRecords = vipService.getRecmdHis(vid);
+        List<Vip> awardRecords = vipService.getRecmdHis(vid);
         return awardRecords;
     }
 

@@ -675,32 +675,32 @@ public class VipExample {
             return (Criteria) this;
         }
 
-        public Criteria andRecommendVidEqualTo(Integer value) {
+        public Criteria andRecommendVidEqualTo(String  value) {
             addCriterion("RECOMMEND_VID =", value, "recommendVid");
             return (Criteria) this;
         }
 
-        public Criteria andRecommendVidNotEqualTo(Integer value) {
+        public Criteria andRecommendVidNotEqualTo(String value) {
             addCriterion("RECOMMEND_VID <>", value, "recommendVid");
             return (Criteria) this;
         }
 
-        public Criteria andRecommendVidGreaterThan(Integer value) {
+        public Criteria andRecommendVidGreaterThan(String value) {
             addCriterion("RECOMMEND_VID >", value, "recommendVid");
             return (Criteria) this;
         }
 
-        public Criteria andRecommendVidGreaterThanOrEqualTo(Integer value) {
+        public Criteria andRecommendVidGreaterThanOrEqualTo(String value) {
             addCriterion("RECOMMEND_VID >=", value, "recommendVid");
             return (Criteria) this;
         }
 
-        public Criteria andRecommendVidLessThan(Integer value) {
+        public Criteria andRecommendVidLessThan(String value) {
             addCriterion("RECOMMEND_VID <", value, "recommendVid");
             return (Criteria) this;
         }
 
-        public Criteria andRecommendVidLessThanOrEqualTo(Integer value) {
+        public Criteria andRecommendVidLessThanOrEqualTo(String value) {
             addCriterion("RECOMMEND_VID <=", value, "recommendVid");
             return (Criteria) this;
         }

@@ -15,6 +15,14 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
+<div class="daui_col">
+    <div class="top">
+        <div class="title">
+            <span class="daui_icon1"></span>
+            <span>充值</span>
+        </div>
+    </div>
+</div>
 <form class="daui_form" id="mForm" style="max-width: 600px; margin: auto">
     <div class="line" >
         <p class="title">会员ID</p>

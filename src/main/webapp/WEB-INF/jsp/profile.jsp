@@ -22,7 +22,7 @@
         </div>
         <div class="btns">
             <div>
-                <a href="https://www.gxmyvips.com/info/edit" class="daui_btn medium blue">修改</a>
+                <a href="#" class="daui_btn medium blue">修改</a>
             </div>
         </div>
     </div>

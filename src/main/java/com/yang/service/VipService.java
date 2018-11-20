@@ -12,5 +12,5 @@ public interface VipService {
 
       int updateVipByVid (Vip vip);
 
-      List<AwardRecord> getRecmdHis(String vid);
+      List<Vip> getRecmdHis(String vid);
 }

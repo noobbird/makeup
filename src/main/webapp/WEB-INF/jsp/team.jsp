@@ -122,11 +122,6 @@
                 <tbody>
                 </tbody></table>
 
-            <div class="daui_pages">
-                <div class="l">总 0 条，共 0 页</div>
-                <div class="r">
-                    <a>没有相关记录</a>            </div>
-            </div>
         </div>
     </div>
     <div class="page-index">
@@ -135,6 +130,24 @@
         <div  class="indiv"></div>
     </div>
 <script>
+    function formatDate(time){
+        var date = new Date(time);
+
+        var year = date.getFullYear(),
+            month = date.getMonth()+1,//月份是从0开始的
+            day = date.getDate(),
+            hour = date.getHours(),
+            min = date.getMinutes(),
+            sec = date.getSeconds();
+        var newTime = year + '-' +
+            (month < 10? '0' + month : month) + '-' +
+            (day < 10? '0' + day : day) + ' ' +
+            (hour < 10? '0' + hour : hour) + ':' +
+            (min < 10? '0' + min : min) + ':' +
+            (sec < 10? '0' + sec : sec);
+
+        return newTime;
+    }
     $(function(){
         var alldata ='';
         var pagesize = 6;
@@ -148,9 +161,9 @@
                 var product = json[i];
                 var tr = '<tr>';
                 tr += '<td>' + product.vid +'</td>';
-                tr += '<td>' + product.relatedVip + '</td>';
-                tr += '<td>' + product.awardTime + '</td>';
-
+                tr += '<td>' + product.vName + '</td>';
+                tr += '<td>' + product.vClass + '</td>';
+                tr += '<td>' + formatDate(product.registeTime) + '</td>';
                 tr += '</tr>';
                 $('.recmd').append(tr);
                 index += 1;
