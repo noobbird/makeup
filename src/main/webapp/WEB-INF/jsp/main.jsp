@@ -71,11 +71,11 @@
                 <span>积分账户</span>
                 <em class="zicon zicon-arrowright"></em>
             </a>
-            <a id="pswd" href="#" class="" onclick="jump(this,'pswd');" id="pawd">
-                <em class="zicon zicon-gear"></em>
-                <span>修改密码</span>
-                <em class="zicon zicon-arrowright"></em>
-            </a>
+            <%--<a id="pswd" href="#" class="" onclick="jump(this,'pswd');" id="pawd">--%>
+                <%--<em class="zicon zicon-gear"></em>--%>
+                <%--<span>修改密码</span>--%>
+                <%--<em class="zicon zicon-arrowright"></em>--%>
+            <%--</a>--%>
         </div>
     </div>
     <div class="dwui_menu menu2 zicon zicon-menu" onClick="$('.dwui_navs').show();$('.dwui_menu.menu2').hide();">
@@ -85,10 +85,7 @@
             <div class="title">
                 <p>DS共享美业会员服务中心</p>
             </div>
-            <div class="btns">
-                <a href="https://www.gxmyvips.com/info/pswd" class="zicon zicon-lock"></a>
-                <a href="https://www.gxmyvips.com/login/out" class="zicon zicon-logout"></a>
-            </div>
+
         </div>
 
         <div class="dwui_main"> </div>

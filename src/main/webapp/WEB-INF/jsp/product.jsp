@@ -5,7 +5,7 @@
   Time: 19:41
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java"  %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  isELIgnored="true"%>
 <html>
 <head>
     <title>Title</title>
@@ -53,9 +53,9 @@
                 </table>
                 <input type="hidden" name="type" value="2">
             </form>
-            <p style="text-align: right; padding-top: 5px;">
-                <a href="javascript:Submit(2);" class="daui_btn blue big">购买</a>
-            </p>
+            <%--<p style="text-align: right; padding-top: 5px;">--%>
+                <%--<a href="javascript:Submit(2);" class="daui_btn blue big">购买</a>--%>
+            <%--</p>--%>
 
         </div>
     </div>
@@ -95,14 +95,16 @@
             </table>
             <input type="hidden" name="type" value="1">
         </form>
-        <p style="text-align: right; padding-top: 5px;">
-            <a href="javascript:Submit(1);" class="daui_btn blue big">购买</a>
-        </p>
+
+        <%--<p style="text-align: right; padding-top: 5px;">--%>
+            <%--<a href="javascript:Submit(1);" class="daui_btn blue big">购买</a>--%>
+        <%--</p>--%>
     </div>
+
 </div>
+</body>
     <script>
         $(() =>{
-            searchAllProduct()
             shoppingMethod(1);
             getLoginVip()
         });
@@ -122,19 +124,25 @@
                 $('.novBar button[name="cashShopping"]').css("background","#0d97ff");
                 $('#pointShoppingDiv').css("display","none");
                 $('#cashShoppingDiv').css("display","inline");
+                let data={};
+                data.productType="1,3"
+                searchAllProduct(data);
             }else{     //积分购物
                 $('.novBar button[name="cashShopping"]').css("background","#1eb9ff");
                 $('.novBar button[name="pointShopping"]').css("background","#0d97ff");
                 $('#cashShoppingDiv').css("display","none");
                 $('#pointShoppingDiv').css("display","inline");
+                let data={};
+                data.productType="2,3"
+                searchAllProduct(data);
             }
         }
 
         /**
          * 查询所有商品
          * */
-        function searchAllProduct() {
-            $.get('product/findProduceByWhere','',function (results) {
+        function searchAllProduct(data) {
+            $.get('product/findProduceByWhere',data,function (results) {
                 var str="";
                 for(productVO of results){
                     str +=`
@@ -156,7 +164,7 @@
                                 <i class="" onclick="increase(this)" >+</i>
                             </div>
                         </td>
-                        <td class="c"> <img src="images/cart.jpg" onclick="addtProductToCart(this)"></td>
+                        <td class="c"> <img src="images/cart.jpg" onclick="addtProductToCart(this)" style="cursor:pointer;"></td>
                     </tr>
                     `;
                 }
@@ -230,5 +238,5 @@
             });
         }
     </script>
-</body>
+
 </html>

@@ -39,4 +39,13 @@ public interface CartService {
      */
     int insertCart(Cart cart);
 
+    /**
+     * 删除购物车记录
+     * @param oId
+     * @return 1表示删除成功 0 表示删除失败
+     */
+    int deleteCart(Integer oId) throws Exception;
+
+    Cart findVipCartWithProductId(Cart cart) throws  Exception;
+
 }

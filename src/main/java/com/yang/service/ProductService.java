@@ -8,6 +8,6 @@ import java.util.List;
 
 @Service
 public interface ProductService {
-    List<ProductVO> findProdectByWhere(ProductVO productVO);
+    List<Product> findProdectByWhere(Product product);
     Product getProductByKey(int productId);
 }

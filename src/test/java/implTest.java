@@ -42,7 +42,7 @@ public class implTest {
     public void findPocketRecord(){
         PocketRecord pocketRecord = new PocketRecord();
         pocketRecord.setRelatedVipid("MY103821");
-       List<PocketRecord> pocketRecords = pocketRecordService.findPocketRecordByWhere(pocketRecord);
+       List<PocketRecord> pocketRecords = pocketRecordService.findPocketRecordByWhere(pocketRecord,new Page());
         for (PocketRecord pocket: pocketRecords
              ) {
             java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
