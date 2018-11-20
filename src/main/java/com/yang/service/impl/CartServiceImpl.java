@@ -7,6 +7,7 @@ import com.yang.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service("cartService")
@@ -31,6 +32,9 @@ public class CartServiceImpl implements CartService {
         CartExample cartExample = new CartExample();
         CartExample.Criteria criteria = cartExample.createCriteria();
         addCriteria(criteria,cart);
+        if (cart.getProdcutType()!=null){
+            cartExample.setProductType(cart.getProdcutType());
+        }
         return cartMapper.selectByExample(cartExample);
     }
 
@@ -44,6 +48,16 @@ public class CartServiceImpl implements CartService {
         return cartMapper.insert(cart);
     }
 
+    @Override
+    public int deleteCart(Integer oId) throws Exception{
+        return cartMapper.deleteByPrimaryKey(oId);
+    }
+
+    @Override
+    public Cart findVipCartWithProductId(Cart cart) throws Exception {
+        return cartMapper.findVipCartWithProductId(cart);
+    }
+
     public void addCriteria( CartExample.Criteria criteria,Cart cart){
         if (cart.getoId()!=null){
             criteria.andOIdEqualTo(cart.getoId());
@@ -54,5 +68,6 @@ public class CartServiceImpl implements CartService {
         if (cart.getVipId()!=null){
             criteria.andVipIdEqualTo(cart.getVipId());
         }
+
     }
 }

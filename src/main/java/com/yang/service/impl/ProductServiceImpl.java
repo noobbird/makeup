@@ -17,11 +17,17 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductMapper productMapper;
     @Override
-    public List<ProductVO> findProdectByWhere(ProductVO productVO) {
+    public List<Product> findProdectByWhere(Product product) {
         ProductExample productExample = new ProductExample();
         ProductExample.Criteria criteria = productExample.createCriteria();
+        String [] productTypes = product.getProdcutType().split(",");
+        List<String> productList =  new ArrayList<>();
+        for (String productType: productTypes ){
+            productList.add(productType);
+        }
+        criteria.andProdcutTypeIn(productList);
 
-        return toProductVOlist(productMapper.selectByExample(productExample));
+        return productMapper.selectByExample(productExample);
     }
 
     @Override

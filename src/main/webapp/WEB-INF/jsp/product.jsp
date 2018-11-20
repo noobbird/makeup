@@ -102,7 +102,6 @@
 </div>
     <script>
         $(() =>{
-            searchAllProduct()
             shoppingMethod(1);
             getLoginVip()
         });
@@ -122,19 +121,25 @@
                 $('.novBar button[name="cashShopping"]').css("background","#0d97ff");
                 $('#pointShoppingDiv').css("display","none");
                 $('#cashShoppingDiv').css("display","inline");
+                let data={};
+                data.productType="1,3"
+                searchAllProduct(data);
             }else{     //积分购物
                 $('.novBar button[name="cashShopping"]').css("background","#1eb9ff");
                 $('.novBar button[name="pointShopping"]').css("background","#0d97ff");
                 $('#cashShoppingDiv').css("display","none");
                 $('#pointShoppingDiv').css("display","inline");
+                let data={};
+                data.productType="2,3"
+                searchAllProduct(data);
             }
         }
 
         /**
          * 查询所有商品
          * */
-        function searchAllProduct() {
-            $.get('../product/findProduceByWhere','',function (results) {
+        function searchAllProduct(data) {
+            $.get('../product/findProduceByWhere',data,function (results) {
                 var str="";
                 for(productVO of results){
                     str +=`

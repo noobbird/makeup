@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../css/dwui.css?20180831" />
     <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
     <script src="../js/script.js?20180831"></script>
+    <script src="../js/common.js"></script>
 </head>
 <body>
     <div class="daui_col" id="personalPocketRecord">
@@ -22,7 +23,8 @@
             <table class="daui_table">
                 <thead><tr>
                     <th width="150">订单号</th>
-                    <th>时间</th>
+                    <th width="20%">产品名</th>
+                    <th width="20%">时间</th>
                     <th>数量</th>
                     <th>单价</th>
                     <th>总价</th>
@@ -64,9 +66,11 @@
     $(() =>{
         setPages()
         $('#firstPage').click(() =>{
+            $('#currentPage').text(1)
             let data = {};
             data.firstIndex=0;
             data.pageSize=$('#pageSize_select').val();
+
             searchShoppingRecord(data);
         });
         $('#finalPage').click(() =>{
@@ -140,7 +144,8 @@
 
                     <td class="c" hidden="true">${ shoppingRecord.productId}</td>
                     <td class="c" width="150">${ shoppingRecord.oId}</td>
-                    <td class="c">${ shoppingRecord.stringAddTime}</td>
+                    <td class="c" width="150">${ shoppingRecord.productName}</td>
+                    <td class="c">${ formatDate(shoppingRecord.addTime)}</td>
                     <td class="c">${ shoppingRecord.productCount}</td>
                     <td class="c">${ shoppingRecord.productPrice}</td>
                     <td class="c">${ shoppingRecord.totalPrice}</td>

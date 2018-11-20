@@ -93,4 +93,6 @@ public interface CartMapper {
      * @mbggenerated Thu Nov 01 08:54:57 CST 2018
      */
     int updateByPrimaryKey(Cart record);
+
+    Cart findVipCartWithProductId(Cart cart);
 }
